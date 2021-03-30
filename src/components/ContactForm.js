@@ -8,13 +8,13 @@ function ContactForm() {
     }
     return (
         <form onSubmit={handleSubmit}>
-            <label htmlFor="email"></label>
+            <label htmlFor="email" className="sr-only">email</label>
             <input id="email" type="email" name="email" placeholder="email" />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
             <textarea id="message" name="message" placeholder="message"/>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
-            <label htmlFor="name"></label>
+            <label htmlFor="name" className="sr-only">name</label>
             <input type="text" id="name" name="name" placeholder="name"/>
 
             <button type="submit" disabled={state.submitting}>
