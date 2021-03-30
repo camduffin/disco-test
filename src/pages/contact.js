@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'gatsby';
 import '../../styles/contact.scss';
 import Layout from '../components/Layout';
 
