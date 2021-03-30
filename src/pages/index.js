@@ -6,7 +6,7 @@ import { StaticImage } from 'gatsby-plugin-image';
 const IndexPage = () => {
   return (
       <Layout>
-        <StaticImage src="../images/pexels-fox-998521.jpg" loading="lazy" className="main-header-image" objectFit="cover" layout="fullWidth" placeholder="blurred" />
+        <StaticImage src="../images/pexels-fox-998521.jpg" loading="eager" className="main-header-image" objectFit="cover" layout="fullWidth" placeholder="blurred" />
           <h1 className='about-header'>YESSSSSSs</h1>
         
           <div className="wrapper">
