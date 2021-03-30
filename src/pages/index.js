@@ -1,13 +1,15 @@
 import * as React from "react"
 import '../../styles/index.scss';
 import Layout from '../components/Layout';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
   return (
       <Layout>
-        <StaticImage src="../images/pexels-fox-998521.jpg" loading="eager" className="main-header-image" objectFit="cover" layout="fullWidth"/>
+        {/* <StaticImage src="../images/pexels-fox-998521.jpg" loading="eager" placeholder="tracedSVG" className="main-header-image" objectFit="cover" layout="fullWidth" alt="a ring" /> */}
+        <div className="main-image-header">
           <h1 className='about-header'>YESSSSSSs</h1>
+        </div>
         
           <div className="wrapper">
             <p>We are here to help you turn your day into ourday!</p>
