@@ -5,6 +5,14 @@ module.exports = {
   plugins: [
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
     "gatsby-plugin-react-helmet",
     {
       resolve: `gatsby-plugin-nprogress`,
