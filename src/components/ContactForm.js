@@ -19,7 +19,7 @@ function ContactForm() {
 
             <button type="submit" disabled={state.submitting}>
             Send!
-        </button>
+            </button>
         </form>
     );
 }

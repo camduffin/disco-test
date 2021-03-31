@@ -5,14 +5,14 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: lightgrey;
-    min-height: 10vh;
+    min-height: 20vh;
 }
 
 nav .logo {
     font-size: 22px;
     font-weight: 700;
     text-transform: uppercase;
+    color: $gold;
 }
 
 nav .nav-links {
@@ -28,13 +28,18 @@ nav .nav-links .nav-link {
 }
 
 nav .nav-links .nav-link:hover {
-    color: blue;
+    color: black;
 }
 
 nav .burger {
     font-size: 30px;
     display: none;
     cursor: pointer;
+}
+
+.nav-link-active {
+    color: grey;
+    opacity: 1;
 }
 
 @media all and (max-width: 768px) {
@@ -49,18 +54,18 @@ nav .burger {
         top: 0;
         left: 0;
         height: 100vh;
-        background-color: lightgray;
-        width: 50%;
+        background-color: $offwhite;
+        width: 30%;
         transform: translateX(-500px);
     }
 
     nav .nav-links li {
-        padding: 25px;
+        padding: 25px 25px 25px 0;
         border-bottom: 3px solid $gold;
+        width: 50%;
     }
 
     nav .nav-links li:last-of-type {
-        padding: 25px;
         border-bottom: 0px solid $gold;
     }
 

@@ -5,11 +5,13 @@ module.exports = {
   plugins: [
     "react-icons",
     {
-      resolve: `gatsby-plugin-google-fonts`,
+      resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
-          `inter`,
-          `source sans serif\:300,400,400,700` // you can also specify font weights and styles
+          // "Roboto",
+          // "source sans serif\:300,400,400,700", 
+          "Unna",
+          "serif\:400,400i,700", 
         ],
         display: 'swap'
       }
@@ -31,9 +33,6 @@ module.exports = {
     {
       resolve: `gatsby-plugin-nprogress`,
       options: {
-        // Setting a color is optional.
-        color: `tomato`,
-        // Disable the loading spinner.
         showSpinner: true,
       },
     },

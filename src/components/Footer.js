@@ -1,13 +1,14 @@
 import React from 'react';
 import SocialLinks from './SocialLinks';
 import ContactForm from './ContactForm';
+import '../../styles/index.scss';
 
 const Footer = () => {
     return (
         <footer>
-            <p>this is a footer</p>
             <SocialLinks />
             <ContactForm />
+            <p>Created By Cam Duffin 2021</p>
         </footer>
     )
 }
