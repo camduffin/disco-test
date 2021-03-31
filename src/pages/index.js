@@ -4,9 +4,12 @@ import Layout from '../components/Layout';
 import { StaticImage } from 'gatsby-plugin-image';
 
 const IndexPage = () => {
+
+  const image = '../images/pexels-fox-998521.jpg';
+
   return (
       <Layout>
-        <StaticImage src="../images/pexels-fox-998521.jpg" loading="eager" placeholder="blurred" className="main-header-image" objectFit="cover" layout="fullWidth" alt="a ring" />
+        <StaticImage src={image} loading="eager" placeholder="blurred" className="main-header-image" objectFit="cover" layout="fullWidth" alt="a wedding ring" />
         {/* <div className="main-image-header"> */}
           <h1 className='about-header'>YESSSSSSs</h1>
         {/* </div> */}
