@@ -5,11 +5,11 @@ import Footer from '../components/Footer';
 
 const Layout = (props) => {
     return (
-        <div>
-            <Header />
-                <div>
-                    {props.children}
-                </div>
+        <div className="main-container">
+            <div className="main-content">
+                <Header />
+                {props.children}    
+            </div>
             <Footer />
         </div>
     )

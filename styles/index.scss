@@ -46,4 +46,15 @@ body {
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.main-content {
+    flex-grow: 1;
 }

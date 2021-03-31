@@ -3,6 +3,7 @@ module.exports = {
     title: "isilive-test",
   },
   plugins: [
+    "gatsby-plugin-scroll-reveal",
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
