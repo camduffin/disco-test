@@ -9,7 +9,7 @@ const IndexPage = () => {
 
   return (
       <Layout>
-        <StaticImage src={image} loading="eager" placeholder="blurred" className="main-header-image" objectFit="cover" layout="fullWidth" alt="a wedding ring" />
+        <StaticImage src={image} placeholder="blurred" className="main-header-image" objectFit="cover" layout="fullWidth" alt="a wedding ring" />
         {/* <div className="main-image-header"> */}
           <h1 className='about-header'>YESSSSSSs</h1>
         {/* </div> */}
