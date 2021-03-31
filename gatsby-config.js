@@ -3,6 +3,17 @@ module.exports = {
     title: "isilive-test",
   },
   plugins: [
+    "react-icons",
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `inter`,
+          `source sans serif\:300,400,400,700` // you can also specify font weights and styles
+        ],
+        display: 'swap'
+      }
+    },
     "gatsby-plugin-smoothscroll",
     "gatsby-plugin-scroll-reveal",
     "gatsby-plugin-sass",
