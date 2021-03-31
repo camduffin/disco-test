@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../styles/how.scss';
+import '../../styles/index.scss';
 import Layout from '../components/Layout';
 
 const HowPage = () => {

@@ -1,6 +1,12 @@
 @import './setup';
 @import './variables';
 
+.wrapper {
+    max-width: 1200px;
+    width: 90%;
+    margin: 0 auto;
+}
+
 .pricing-section {
     display: flex;
     flex-direction: column;

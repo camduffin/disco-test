@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import '../../styles/navbar.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
+import { GiFlowers } from 'react-icons/gi';
 
 const NavBar = () => {
 
@@ -10,6 +11,9 @@ const NavBar = () => {
     return (
         <div>
             <nav className="nav-bar">
+                <Link to="/">
+                    <div className="our-day-logo"><GiFlowers/></div>
+                </Link>
                 <div className="logo">Our Day</div>
                 <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                     <li><Link to="/" className="nav-link" activeClassName="nav-link-active">Home</Link></li>

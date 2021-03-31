@@ -1,6 +1,12 @@
 @import './setup';
 @import './variables';
 
+
+.our-day-logo {
+    color: $gold;
+    font-size: 5rem;
+}
+
 .nav-bar {
     display: flex;
     justify-content: space-around;
@@ -68,7 +74,4 @@ nav .burger {
     nav .nav-links li:last-of-type {
         border-bottom: 0px solid $gold;
     }
-
-
-
 }

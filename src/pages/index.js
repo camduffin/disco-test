@@ -2,15 +2,12 @@ import * as React from "react"
 import '../../styles/index.scss';
 import Layout from '../components/Layout';
 import scrollTo from 'gatsby-plugin-smoothscroll';
-import Helmet from 'react-helmet';
 import { TiArrowDown } from 'react-icons/ti';
 
 const IndexPage = () => {
 
   return (
       <Layout>
-        <Helmet>
-        </Helmet>
         <div className="main-image-header" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
           <div className="about-header-container">
             <h1 className='about-header'>Our Day</h1>
@@ -29,4 +26,4 @@ const IndexPage = () => {
 
 }
 
-export default IndexPage
+export default IndexPage;

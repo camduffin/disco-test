@@ -10,6 +10,9 @@ const SocialLinks = () => {
                     <li>
                         <a href="https://www.facebook.com/isilivecanada/">Facebook</a>
                     </li>
+                    <li>
+                        <a href="https://www.instagram.com/isilivecanada/?hl=en">Instagram</a>
+                    </li>
                 </ul>
         </nav>
     )
