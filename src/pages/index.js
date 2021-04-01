@@ -17,7 +17,7 @@ const IndexPage = () => {
             <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown/></button>
           </div>
         </div>
-      
+
         <section className="about-section" id="about-content">
           <div className="wrapper">
             <h2>About Us</h2>
