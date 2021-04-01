@@ -20,7 +20,7 @@ const Footer = () => {
             <div className="copyright">
                 <p>© 2021 by OurDay.ca</p>
                 <p>Presented By</p>
-                <a href="www.isilive.ca">www.isilive.ca</a>
+                <a href="https://isilive.ca/" target="_blank" rel="noreferrer noopener">www.isilive.ca</a>
             </div>
                 <nav>
                     <SocialLinks />

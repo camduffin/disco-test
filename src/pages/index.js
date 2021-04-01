@@ -12,7 +12,8 @@ const IndexPage = () => {
         <div className="main-image-header" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
           <div className="about-header-container">
             <div>
-              <h1 className='about-header'>Our Day</h1>
+              <h1 className='about-header'>Creating Unforgettable Memories</h1>
+              <h2>www.OurDay.ca</h2>
             </div>
             <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown/></button>
           </div>

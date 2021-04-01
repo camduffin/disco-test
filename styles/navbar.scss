@@ -1,10 +1,13 @@
 @import './setup';
 @import './variables';
-
+// @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
 .our-day-logo {
     color: $gold;
     font-size: 5rem;
+    position: relative;
+    left: 14px;
 }
 
 .nav-bar {
@@ -12,6 +15,9 @@
     justify-content: space-around;
     align-items: center;
     min-height: 20vh;
+    flex-wrap: nowrap;
+    font-family: 'EB Garamond', serif;
+    transition: all .5s;
 }
 
 nav .logo {
@@ -24,8 +30,9 @@ nav .logo {
 nav .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 34%;
+    width: 50%;
     transition: 0.5s ease-in;
+    padding-left: 20px;
 }
 
 .top-link {

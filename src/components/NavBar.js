@@ -13,8 +13,8 @@ const NavBar = () => {
             <nav className="nav-bar">
                 <Link to="/">
                     <div className="our-day-logo"><GiFlowers/></div>
-                </Link>
                 <div className="logo">Our Day</div>
+                </Link>
                 <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                     <li className="nav-link"><Link to="/" className="top-link" activeClassName="nav-link-active">Home</Link></li>
                     <li className="nav-link"><Link to="/contact" className="top-link"  activeClassName="nav-link-active">Contact</Link></li>

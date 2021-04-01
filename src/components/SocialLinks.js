@@ -13,13 +13,13 @@ const SocialLinks = () => {
                     <a href="https://isilive.ca/?gclid=Cj0KCQjwmIuDBhDXARIsAFITC_59o-GCu67XyuN57T4PjUEd0pMiYkj2EhFhdMmuvuBSC7rSWGueel4aAsIJEALw_wcB" target="_blank" rel="noreferrer noopener"><FaPinterestP/></a>
                 </li>
                 <li>
-                    <a href="https://www.facebook.com/isilivecanada/"><RiFacebookFill/></a>
+                    <a href="https://www.facebook.com/isilivecanada/" target="_blank" rel="noreferrer noopener"><RiFacebookFill/></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/isilivecanada/?hl=en"><GrInstagram/></a>
+                    <a href="https://www.instagram.com/isilivecanada/?hl=en" target="_blank" rel="noreferrer noopener"><GrInstagram/></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/isilivecanada/?hl=en"><SiTwitter/></a>
+                    <a href="https://www.instagram.com/isilivecanada/?hl=en" target="_blank" rel="noreferrer noopener"><SiTwitter/></a>
                 </li>
             </ul>
         </nav>
