@@ -32,6 +32,7 @@ body {
 p {
     font-size: 2rem;
     opacity: .9;
+    line-height: 3rem;
 }
 
 h2 {
@@ -133,7 +134,7 @@ a {
 
 .main-image-header {
     background-image: url(../src/images/pexels-fox-998521.jpg);
-    height: 80vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
@@ -143,7 +144,11 @@ a {
 // About Section
 
 .about-section {
-    margin: 200px 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
     .message-link {
         font-size: 2.5rem;
@@ -271,7 +276,7 @@ form {
     color: $darkgrey;
 
     .blog-header {
-        margin-bottom: 100px;
+        margin-bottom: 50px;
     }
 
     .blog-container1 {
