@@ -28,9 +28,14 @@ nav .nav-links {
     transition: 0.5s ease-in;
 }
 
+.top-link {
+    color: black;
+}
+
 nav .nav-links .nav-link {
     font-size: 20px;
     color: black;
+    opacity: .7;
 }
 
 nav .nav-links .nav-link:hover {

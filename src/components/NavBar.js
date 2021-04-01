@@ -16,11 +16,11 @@ const NavBar = () => {
                 </Link>
                 <div className="logo">Our Day</div>
                 <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
-                    <li><Link to="/" className="nav-link" activeClassName="nav-link-active">Home</Link></li>
-                    <li><Link to="/contact" className="nav-link" activeClassName="nav-link-active">Contact</Link></li>
-                    <li><Link to="/blog" className="nav-link" activeClassName="nav-link-active">Blog</Link></li>
-                    <li><Link to="/how" className="nav-link" activeClassName="nav-link-active">How it Works</Link></li>
-                    <li><Link to="/pricing" className="nav-link" activeClassName="nav-link-active">Pricing</Link></li>
+                    <li className="nav-link"><Link to="/" className="top-link" activeClassName="nav-link-active">Home</Link></li>
+                    <li className="nav-link"><Link to="/contact" className="top-link"  activeClassName="nav-link-active">Contact</Link></li>
+                    <li className="nav-link"><Link to="/blog" className="top-link"  activeClassName="nav-link-active">Blog</Link></li>
+                    <li className="nav-link"><Link to="/how" className="top-link"  activeClassName="nav-link-active">How it Works</Link></li>
+                    <li  className="nav-link"><Link to="/pricing" className="top-link"  activeClassName="nav-link-active">Pricing</Link></li>
                 </ul>
                 <GiHamburgerMenu onClick={() => setOpen(!open)} className="burger"/>
             </nav>
