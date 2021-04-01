@@ -5,7 +5,7 @@ import '../../styles/pricing.scss';
 const PricingPage = () => {
     return (
         <Layout>
-            <main className="wrapper">
+            <main className="wrapper" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
                 <section className="pricing-section">
                     <h2>Pricing</h2>
                     <p>Your event is special. We pride ourselves on creating innovative solutions. As such, iSiLIVE offers specific quotes for your specific event. 

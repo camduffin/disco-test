@@ -16,7 +16,9 @@ const Contact = () => {
                             <li><a href="mailto:camduffin@gmail.com">camduffin@gmail.com</a></li>
                         </ul>
                     </nav>
-                    <ContactForm />
+                    <div className="form-container">
+                        <ContactForm />
+                    </div>
                 </section>
             </div>
         </Layout>

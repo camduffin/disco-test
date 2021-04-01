@@ -1,6 +1,8 @@
 @import './setup';
 @import './variables';
 
+// loading progress bar
+
 #nprogress .bar {
     background: #FFBB00 !important;
 }
@@ -13,6 +15,8 @@
     border-top-color: #FFBB00;
     border-left-color: #FFBB00;
 }
+
+// **********
 
 html {
     scroll-behavior: smooth;
@@ -39,20 +43,25 @@ li {
     list-style-type: none;
 }
 
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 a {
     text-decoration: none;
 }
 
-.about-header {
-    color: $offwhite;
-    margin-top: 0;
-}
 
 .down-arrow {
     border: none;
     background-color: transparent;
     color: $offwhite;
     font-size: 6rem;
+    position: absolute;
+    bottom: 0;
+    left: 48%;
+    cursor: pointer;
 }
 
 .wrapper {
@@ -61,6 +70,40 @@ a {
     margin: 0 auto;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    min-width: 100%;
+}
+
+.main-content {
+    flex-grow: 1;
+}
+
+
+// Footer
+
+.footer {
+    width: 100%;
+    height: 20vh;
+    background-color: $gold;
+    margin-top: 100px;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 70%;
+        margin: 0 auto;
+        height: 20vh;
+    }
+
+    a {
+        color: $offwhite;
+        font-size: 2rem;
+    }
+}
 .top-nav {
     display: flex;
     width: 400px;
@@ -76,7 +119,7 @@ a {
         text-decoration: none;
         list-style-type: none;
     }
-
+    
     a {
         text-decoration: none;
     }
@@ -91,31 +134,31 @@ a {
     background-position: center center;
 }
 
+// About Section
+
+.about-section {
+    margin: 200px 0;
+
+    .message-link {
+        font-size: 2.5rem;
+        padding-right: 5px;
+    }
+}
+
+.about-header {
+    color: $offwhite;
+    margin-top: 0;
+}
 .about-header-container {
     display: flex;
+    width: 50%;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-}
 
-.main-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-}
-
-.main-content {
-    flex-grow: 1;
-}
-
-// Footer
-
-footer {
-    display: flex;
-    min-width: 100%;
-    justify-content: space-around;
-    height: 15vh;
-    align-items: center;
+    h1 {
+        margin: 300px;
+        font-size: 8rem;
+    }
 }
 
 // Contact Page
@@ -123,13 +166,13 @@ footer {
 .contact-section {
     display: flex;
     flex-direction: column;
-    align-items: center;
-
     font-size: 2rem;
     color: $darkgrey;
+    width: 70%;
+    margin: 0 auto;
 
     li {
-        padding: 10px 0;
+        padding: 10px 6px;
         margin: 0;
     }
 
@@ -139,11 +182,18 @@ footer {
     }
 }
 
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
 form {
     display: flex;
     flex-direction: column;
-    width: 60%;
+    width: 100%;
     justify-content: space-between;
+    margin: 0 auto;
+    margin-top: 100px;
 
     input[type="text"], input[type="email"] {
         border: none;
@@ -161,10 +211,13 @@ form {
     }
 
     button {
+        margin: 0 auto;
+        margin-top: 20px;
         border: none;
+        border: 2px solid transparent;
         background-color: $gold;
         border-radius: 4px;
-        width: 100%;
+        width: 20%;
         padding: 10px;
         color: $offwhite;
         cursor: pointer;
@@ -172,6 +225,14 @@ form {
             position: relative;
             top: 2px;
             color: $darkgrey;
+            opacity: .6;
+        }
+
+        &:hover,
+        &:focus {
+            background-color: transparent;
+            border: 2px solid $gold;
+            color: $gold;
         }
     }
 }
@@ -182,8 +243,7 @@ form {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // align-items: center;
     font-size: 2rem;
     color: $darkgrey;
 
@@ -192,16 +252,45 @@ form {
     }
 }
 
+// Blog page
+
 .blog-section {
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     font-size: 2rem;
     color: $darkgrey;
 
-    p {
-        width: 70%;
+    .blog-header {
+        margin-bottom: 100px;
     }
+
+    .blog-container1 {
+        display: flex;
+    }
+
+    p {
+        width: 90%;
+    }
+
+    .blog-image-container1 {
+        width: 100%;
+        margin: 80px 0;
+
+        img {
+            width: 80%;
+        }
+    }
+
+
+    .blog-image-container2 {
+        width: 100%;
+        margin: 80px 0;
+
+        img {
+            width: 80%;
+        }
+    }
+
 }

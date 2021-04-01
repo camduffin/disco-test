@@ -9,13 +9,14 @@ function ContactForm() {
     return (
         <form onSubmit={handleSubmit}>
             <label htmlFor="email" className="sr-only">email</label>
-            <input id="email" type="email" name="email" placeholder="email" />
+            <input id="email" type="email" name="email" placeholder="email" required />
             <ValidationError prefix="Email" field="email" errors={state.errors} />
-            <textarea id="message" name="message" placeholder="message"/>
+            <label htmlFor="message" className="sr-only">message</label>
+            <textarea id="message" name="message" placeholder="message" required/>
             <ValidationError prefix="Message" field="message" errors={state.errors} />
 
             <label htmlFor="name" className="sr-only">name</label>
-            <input type="text" id="name" name="name" placeholder="name"/>
+            <input type="text" id="name" name="name" placeholder="name" required/>
 
             <button type="submit" disabled={state.submitting}>
             Send!

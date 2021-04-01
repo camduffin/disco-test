@@ -5,7 +5,7 @@ import Layout from '../components/Layout';
 const HowPage = () => {
     return (
         <Layout>
-            <main>
+            <main className="wrapper" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
                 <section className="how-section">
                     <h2>How it Works</h2>
                     <p>First, tell us about your event! This allows us to figure out your requirements. (Such as how many cameras and microphones are needed, what time frames, are there multiple livestream locations, etc.) We then prepare an onsite visit with testing for a no surprises livestream. </p>

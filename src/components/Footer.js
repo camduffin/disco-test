@@ -4,9 +4,13 @@ import '../../styles/index.scss';
 
 const Footer = () => {
     return (
-        <footer>
-            <SocialLinks />
-            <p>iSiLIVE 2021</p>
+        <footer className="footer">
+            <div className="footer-container">
+                <aside>
+                    <SocialLinks />
+                </aside>
+                <p>iSiLIVE 2021</p>
+            </div>
         </footer>
     )
 }
