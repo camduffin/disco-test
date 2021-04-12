@@ -1,6 +1,6 @@
 import React from 'react';
 import Layout from '../components/Layout';
-import '../../styles/pricing.scss';
+import '../../styles/index.scss';
 
 const PricingPage = () => {
     return (

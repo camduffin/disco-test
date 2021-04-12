@@ -13,7 +13,7 @@ const Contact = () => {
                     <h2 className="contact-header">Contact</h2>
                     <nav>
                         <ul>
-                            <li><FaPhone aria-hidden="true"/> 613-737-3378</li>
+                            <li> <a href="tel:+1-613-737-3378"><FaPhone aria-hidden="true"/> 613-737-3378</a></li>
                             <li><a href="mailto:info@ourday.ca"><MdEmail aria-hidden="true"/> info@ourday.ca</a></li>
                         </ul>
                     </nav>
