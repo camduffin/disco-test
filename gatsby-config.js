@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: "isilive-test",
+    title: "our-day",
   },
   plugins: [
     "react-icons",
@@ -21,6 +21,13 @@ module.exports = {
     "gatsby-plugin-sass",
     "gatsby-plugin-image",
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages/`,
+      },
+    },
+    {
       resolve: "gatsby-source-filesystem",
       options: {
         name: "images",
@@ -39,7 +46,13 @@ module.exports = {
     {
       resolve: "gatsby-plugin-manifest",
       options: {
-        icon: "src/images/icon.png",
+        name: "Our Day",
+        short_name: "Our Day",
+        start_url: "/",
+        background_color: "#EFF1F2",
+        theme_color: "#AF9453",
+        display: "fullscreen",
+        icon: "src/images/gold-flower.png",
       },
     },
     "gatsby-plugin-sharp",

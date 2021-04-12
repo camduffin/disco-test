@@ -13,8 +13,8 @@ const Contact = () => {
                     <h2 className="contact-header">Contact</h2>
                     <nav>
                         <ul>
-                            <li><FaPhone/> 613-737-3378</li>
-                            <li><a href="mailto:info@ourday.ca"><MdEmail/> info@ourday.ca</a></li>
+                            <li><FaPhone aria-hidden="true"/> 613-737-3378</li>
+                            <li><a href="mailto:info@ourday.ca"><MdEmail aria-hidden="true"/> info@ourday.ca</a></li>
                         </ul>
                     </nav>
                     <div className="form-container" id="contact-form">

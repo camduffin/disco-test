@@ -11,12 +11,12 @@ const Footer = () => {
                 <p>Matthews Cres</p>
                 <p>Ottawa, ON K2M1X4</p>
             </div>
-            <span></span>
+            <span aria-hidden="true"></span>
             <div className="phone">
                 <p>Tel: 613.737.3378</p>
                 <a href="mailto:info@ourday.ca">info@ourday.ca</a>
             </div>
-            <span></span>
+            <span aria-hidden="true"></span>
             <div className="copyright">
                 <p>© 2021 by OurDay.ca</p>
                 <p>Presented By</p>

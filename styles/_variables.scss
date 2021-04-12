@@ -2,3 +2,18 @@ $maincolor: grey;
 $offwhite: #EFF1F2;
 $gold: #AF9453;
 $darkgrey: #232227;
+
+// media query mixins
+
+@mixin bigTabletMQ {
+    @media (max-width: 1050px) {
+    @content;
+    }
+}
+
+@mixin tabletMQ {
+    @media (max-width: 687px) {
+    @content;
+    }
+}
+

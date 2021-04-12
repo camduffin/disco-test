@@ -92,6 +92,10 @@ a {
     display: flex;
     color: $offwhite;
 
+    @include tabletMQ {
+        height: auto;
+    }
+
     .footer-container {
         display: flex;
         justify-content: space-between;
@@ -99,6 +103,13 @@ a {
         width: 70%;
         margin: 0 auto;
         height: 30vh;
+        min-width: 600px;
+
+        @include bigTabletMQ {
+            width: 90%;
+            flex-direction: column;
+            height: auto;
+        }
     }
 
     a {
@@ -110,6 +121,11 @@ a {
         border: 1px solid $offwhite;
         height: 100px;
         opacity: .4;
+        margin: 15px;
+
+        @include tabletMQ {
+            display: none;
+        }
     }
 }
 
@@ -124,6 +140,10 @@ a {
 .social-links {
     margin: 0;
     display: flex;
+    @include tabletMQ {
+        flex-wrap: wrap;
+        width: 80%;
+    }
     
     li {
         padding: 20px;
