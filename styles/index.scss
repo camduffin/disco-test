@@ -26,7 +26,6 @@ html {
 
 body {
     background-color: $offwhite;
-    // font-family: Unna;
     font-family: 'EB Garamond', serif;
     color: $darkgrey;
 }
@@ -55,7 +54,6 @@ ul {
 a {
     text-decoration: none;
 }
-
 
 .down-arrow {
     border: none;
@@ -94,6 +92,14 @@ a {
 
     @include tabletMQ {
         height: auto;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+    }
+
+    @include phoneMQ {
+        padding-top: 10px;
+        margin-top: 30px;
     }
 
     .footer-container {
@@ -103,12 +109,31 @@ a {
         width: 70%;
         margin: 0 auto;
         height: 30vh;
-        min-width: 600px;
+        min-width: 700px;
 
         @include tabletMQ {
-            width: 90%;
-            flex-direction: column;
-            height: auto;
+            width: 80%;
+            min-width: 200px;
+            flex-direction: column-reverse;
+            height: 80vh;
+            align-items: flex-start;
+            margin: 0;
+            padding: 60px 0;
+            justify-content: space-between;
+        }
+    }
+
+    .phone {
+        @include tabletMQ {
+            width: 200px;
+        }
+    }
+
+    p {
+        @include tabletMQ {
+            margin: 0 auto;
+            padding: 0;
+            width: 200px;
         }
     }
 
@@ -142,15 +167,26 @@ a {
     display: flex;
     @include tabletMQ {
         flex-wrap: wrap;
-        width: 60%;
+        width: 200px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    @include phoneMQ {
+        width: 70%;
     }
     
     li {
         padding: 20px;
+        transition: all .2s ease-in-out;
+        
+        svg {
+            font-size: 3rem;
+        }
 
         &:hover,
         &:focus {
-            transform: scale(1.2);
+            transform: scale(1.4);
         }
     }
 
@@ -163,6 +199,11 @@ a {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+
+    @include tabletMQ {
+        height: auto;
+        padding: 100px 0;
+    }
 }
 
 .about-header {
@@ -181,6 +222,10 @@ a {
     h1 {
         font-size: 8rem;
         opacity: .8;
+
+        @include tabletMQ {
+            font-size: 6rem;
+        }
     }
 
     h2 {
@@ -197,6 +242,14 @@ a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @include tabletMQ {
+        height: auto;
+        width: 80%;
+        padding: 100px 0;
+        padding-left: 10%;
+        
+    }
 
     .message-link {
         font-size: 2.5rem;
@@ -242,6 +295,10 @@ form {
     margin: 0 auto;
     margin-top: 50px;
 
+    @include phoneMQ {
+        padding-bottom: 100px;
+    }
+
     input[type="text"], input[type="email"] {
         border: none;
         border-radius: 2px;
@@ -268,6 +325,11 @@ form {
         padding: 10px;
         color: $offwhite;
         cursor: pointer;
+
+        @include tabletMQ {
+            width: 100%;
+        }
+
         &:active {
             position: relative;
             top: 2px;
@@ -311,12 +373,22 @@ form {
     font-size: 2rem;
     color: $darkgrey;
 
+    @include bigTabletMQ {
+        margin-left: 0;
+    }
+
     .blog-header {
         margin-bottom: 50px;
+
     }
 
     .blog-container1 {
         display: flex;
+
+        @include bigTabletMQ {
+            width: 80%;
+            margin-left: 10%;
+        }
     }
 
     p {
@@ -326,6 +398,7 @@ form {
     h3 {
         font-size: 3rem;
         opacity: .9;
+
     }
 
     h4 {
@@ -335,6 +408,9 @@ form {
     .blog-image-container1 {
         width: 100%;
         margin: 80px 0;
+        @include tabletMQ {
+            margin: 0;
+        }
 
         img {
             width: 80%;
@@ -345,6 +421,9 @@ form {
     .blog-image-container2 {
         width: 100%;
         margin: 80px 0;
+        @include tabletMQ {
+            margin: 0;
+        }
 
         img {
             width: 80%;
