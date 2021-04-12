@@ -14,10 +14,17 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    min-height: 20vh;
+    min-height: 15vh;
+    height: 15vh;
     flex-wrap: nowrap;
     font-family: 'EB Garamond', serif;
     transition: all .5s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: $offwhitetrans;
+    z-index: 1000;
 }
 
 nav .logo {
@@ -58,7 +65,7 @@ nav .burger {
 }
 
 .nav-link-active {
-    color: grey;
+    color: $gold;
     opacity: 1;
 }
 
@@ -75,12 +82,12 @@ nav .burger {
         left: 0;
         height: 100vh;
         background-color: $offwhite;
-        width: 30%;
+        width: 50%;
         transform: translateX(-500px);
     }
 
     nav .nav-links li {
-        padding: 25px 25px 25px 0;
+        padding: 50px 25px 25px 15px;
         border-bottom: 3px solid $gold;
         width: 50%;
     }
