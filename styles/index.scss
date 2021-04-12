@@ -105,7 +105,7 @@ a {
         height: 30vh;
         min-width: 600px;
 
-        @include bigTabletMQ {
+        @include tabletMQ {
             width: 90%;
             flex-direction: column;
             height: auto;
@@ -142,11 +142,16 @@ a {
     display: flex;
     @include tabletMQ {
         flex-wrap: wrap;
-        width: 80%;
+        width: 60%;
     }
     
     li {
         padding: 20px;
+
+        &:hover,
+        &:focus {
+            transform: scale(1.2);
+        }
     }
 
 }
