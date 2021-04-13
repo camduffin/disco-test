@@ -8,6 +8,22 @@
     font-size: 5rem;
     position: relative;
     left: 14px;
+
+    @include bigTabletMQ {
+        font-size: 3rem;
+    }
+}
+
+.our-day-logo2 {
+    color: $gold;
+    font-size: 5rem;
+    position: relative;
+    display: none;
+
+    @include bigTabletMQ {
+        font-size: 3rem;
+        display: block;
+    }
 }
 
 .nav-bar {
@@ -33,6 +49,32 @@ nav .logo {
     text-transform: uppercase;
     color: $gold;
     position: relative;
+
+    @include bigTabletMQ {
+        font-size: 15px;
+    }
+}
+
+nav .logo2 {
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $gold;
+    position: relative;
+    display: none;
+
+    @include bigTabletMQ {
+        font-size: 15px;
+        display: block;
+    } 
+}
+
+.mobile-nav-logo {
+    display: none;
+
+    @include bigTabletMQ {
+        display: block;
+    }
 }
 
 nav .nav-links {
@@ -59,9 +101,10 @@ nav .nav-links .nav-link:hover {
 }
 
 nav .burger {
-    font-size: 30px;
+    font-size: 40px;
     display: none;
     cursor: pointer;
+    color: $gold;
 }
 
 .nav-link-active {
@@ -95,4 +138,12 @@ nav .burger {
     nav .nav-links li:last-of-type {
         border-bottom: 0px solid $gold;
     }
+}
+
+@media all and (max-width: 500px) {
+
+    nav .nav-links {
+        width: 70%;
+    }
+    
 }

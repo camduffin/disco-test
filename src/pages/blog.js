@@ -1,15 +1,15 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import '../../styles/index.scss';
-// import weddingCeremony from '../images/wedding-ceremony.jpg';
-// import weddingBouqet from '../images/wedding-bouqet.jpg';
+import weddingCeremony from '../images/wedding-ceremony.jpg';
+import weddingBouqet from '../images/wedding-bouqet.jpg';
 import { StaticImage } from 'gatsby-plugin-image';
 import SEO from '../components/SEO';
 
 const Blog = () => {
 
-    // const weddingCeremony = '../images/wedding-ceremony.jpg';
-    // const weddingBouqet = '../images/wedding-bouqet.jpg';
+    const weddingCeremony = '../images/wedding-ceremony.jpg';
+    const weddingBouqet = '../images/wedding-bouqet.jpg';
 
     return (
         <>
@@ -26,7 +26,7 @@ const Blog = () => {
 
                                 <div className="blog-image-container1">
                                         {/* <img src={weddingCeremony} alt=""/>  */}
-                                        <StaticImage src='../images/wedding-ceremony.jpg' alt="A sign pointing wedding guests to a wedding ceremony" />
+                                        <StaticImage src={weddingCeremony} alt="A sign pointing wedding guests to a wedding ceremony" />
                                 </div>   
                     
                                 <p>Tempore similique eligendi necessitatibus quos? Incidunt porro dignissimos id! Odio sunt accusamus maxime doloribus doloremque excepturi repellendus cum! Quos odit, beatae quidem culpa quisquam quae modi quam tempore dolore eaque esse? Pariatur quo eius, consequuntur harum nihil asperiores eaque tenetur ratione quidem ducimus iste vero quia, officiis quisquam sed aliquam dicta nesciunt dolores. Enim tempora omnis quisquam, autem hic earum quod fuga reprehenderit aperiam? Hic a veritatis, voluptatem, natus ipsa error sed iure sit rerum exercitationem atque labore voluptate libero fugiat temporibus eum! Quod voluptates officia et illum, excepturi temporibus? Illo numquam delectus nulla pariatur laboriosam iste explicabo maxime ut, voluptate, quia, provident sed doloremque esse rerum.</p> 
@@ -34,7 +34,7 @@ const Blog = () => {
                                 <p>Laboriosam, maxime sed amet quidem aliquam asperiores, pariatur perspiciatis quos at nisi magni minus temporibus ipsa, praesentium corporis? Delectus sint reiciendis voluptatum deleniti ratione in magnam quis modi labore ipsam dicta, ea sit voluptatibus at veniam harum inventore illum maxime eveniet voluptate reprehenderit doloremque quaerat pariatur. Sit molestias delectus neque nemo? Provident numquam voluptatem possimus repudiandae necessitatibus assumenda nostrum, ex quaerat recusandae quod, porro libero officiis consequuntur pariatur obcaecati, impedit enim laudantium explicabo eaque laboriosam magni veritatis culpa blanditiis. Eos fugiat dicta ad inventore, quam sed quos repudiandae soluta et omnis!</p>
                                 <div className="blog-image-container2">
                                         {/* <img src={weddingBouqet} alt=""/> */}
-                                        <StaticImage src='../images/wedding-bouqet.jpg' alt="A bride holding pink flowers"/>
+                                        <StaticImage src={weddingBouqet} alt="A bride holding pink flowers"/>
                                 </div>
                             </div>
                         </div>

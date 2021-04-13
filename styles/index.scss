@@ -121,10 +121,14 @@ a {
             min-width: 200px;
             flex-direction: column-reverse;
             height: 80vh;
-            align-items: flex-start;
+            align-items: center;
             margin: 0;
             padding: 60px 0;
             justify-content: space-between;
+        }
+
+        @include phoneMQ {
+            height: 100vh;
         }
     }
 
@@ -170,12 +174,6 @@ a {
 .social-links {
     margin: 0;
     display: flex;
-    @include tabletMQ {
-        flex-wrap: wrap;
-        width: 200px;
-        align-items: center;
-        justify-content: space-between;
-    }
 
     @include phoneMQ {
         width: 70%;
@@ -385,8 +383,17 @@ form {
     margin-left: 100px;
     margin-top: 15vh;
 
+    @include tabletMQ {
+        margin: 15vh 0 0 0;
+        padding-left: 10%;
+    }
+
     p {
         width: 60%;
+
+        @include tabletMQ {
+            width: 80%;
+        }
     }
 }
 
@@ -409,6 +416,9 @@ form {
     .blog-header {
         margin-bottom: 50px;
 
+        @include bigTabletMQ {
+            padding-left: 10%;
+        }
     }
 
     .blog-container1 {
@@ -467,7 +477,18 @@ form {
     margin-left: 100px;
     margin-top: 15vh;
     height: 60vh;
+
+    @include tabletMQ {
+        height: auto;
+        margin: 20vh 0;
+        padding-left: 10%;
+    }
+
     p {
         width: 60%;
+
+        @include tabletMQ {
+            width: 80%;
+        }
     }
 }

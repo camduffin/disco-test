@@ -13,7 +13,7 @@ const NavBar = () => {
             <nav className="nav-bar">
                 <Link to="/">
                     <div className="our-day-logo"><GiFlowers/></div>
-                <div className="logo">Our Day</div>
+                    <div className="logo">Our Day</div>
                 </Link>
                 <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                     <li className="nav-link"><Link to="/" className="top-link" activeClassName="nav-link-active">Home</Link></li>
@@ -21,6 +21,12 @@ const NavBar = () => {
                     <li className="nav-link"><Link to="/blog" className="top-link"  activeClassName="nav-link-active">Blog</Link></li>
                     <li className="nav-link"><Link to="/how" className="top-link"  activeClassName="nav-link-active">How it Works</Link></li>
                     <li  className="nav-link"><Link to="/pricing" className="top-link"  activeClassName="nav-link-active">Pricing</Link></li>
+                    <li className="mobile-nav-logo">
+                        <Link to="/">
+                            <div className="our-day-logo2"><GiFlowers/></div>
+                            <div className="logo2">Our Day</div>
+                        </Link>
+                    </li>
                 </ul>
                 <GiHamburgerMenu onClick={() => setOpen(!open)} className="burger"/>
             </nav>
