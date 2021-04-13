@@ -19,13 +19,13 @@ const IndexPage = () => {
         bgImageAlt="A gold wedding band with white diamonds"
         blur={{ min: -15, max: 15 }} 
         >
-        <div  data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
+        <div>
           <div className="about-header-container">
             <div>
-              <h1 className='about-header'>Creating Unforgettable Memories</h1>
-              <h2>www.OurDay.ca</h2>
+              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating Unforgettable Memories</h1>
+              <h2 data-sal="slide-left" data-sal-duration="1000">www.OurDay.ca</h2>
             </div>
-            <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown/></button>
+            <button className="down-arrow" data-sal="slide-up" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown aria-label="Scroll Down"/></button>
           </div>
         </div>
         </Parallax>
