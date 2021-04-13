@@ -1,6 +1,9 @@
 module.exports = {
   siteMetadata: {
-    title: "our-day",
+    title: "Our Day",
+    titleTemplate: "Our Day",
+    description: "Wedding livestreaming and webcasting for remote events.  We are here to help you turn your day into ourday!",
+    url: "http://www.ourday.ca",
   },
   plugins: [
     "react-icons",
@@ -28,12 +31,12 @@ module.exports = {
       },
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-source-filesystem`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        name: `images`,
+        path: `${__dirname}/src/images/`,
       },
-      __key: "images",
+      __key: `images`,
     },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-nprogress",

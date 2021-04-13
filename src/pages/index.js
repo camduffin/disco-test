@@ -4,10 +4,13 @@ import Layout from '../components/Layout';
 import scrollTo from 'gatsby-plugin-smoothscroll';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { Link } from 'gatsby';
+import SEO from '../components/SEO';
 
-const IndexPage = () => {
+const IndexPage = (data) => {
 
   return (
+    <>
+    <SEO title="Home" />
       <Layout>
         <div className="main-image-header" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
           <div className="about-header-container">
@@ -28,6 +31,7 @@ const IndexPage = () => {
           </div>
         </section>
       </Layout>
+    </>
   )
 
 }
