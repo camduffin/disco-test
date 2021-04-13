@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `./src/pages/`,
+        path: `${__dirname}/src/pages/`,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -64,7 +64,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
-        path: `${__dirname}/src/images/`,
+        path: `./src/images/`,
       },
       __key: `images`,
     },
