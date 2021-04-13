@@ -4,6 +4,7 @@ import '../../styles/index.scss';
 // import weddingCeremony from '../images/wedding-ceremony.jpg';
 // import weddingBouqet from '../images/wedding-bouqet.jpg';
 import { StaticImage } from 'gatsby-plugin-image';
+import SEO from '../components/SEO';
 
 const Blog = () => {
 
@@ -11,6 +12,8 @@ const Blog = () => {
     // const weddingBouqet = '../images/wedding-bouqet.jpg';
 
     return (
+        <>
+            <SEO />
             <Layout>
                 <div className="wrapper">
                     <section className="blog-section">
@@ -38,6 +41,7 @@ const Blog = () => {
                     </section>
                 </div>
             </Layout>
+        </>
     )
 }
 
