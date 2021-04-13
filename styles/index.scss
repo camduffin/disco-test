@@ -196,7 +196,7 @@ a {
 }
 
 .main-image-header {
-    background-image: url(../src/images/pexels-fox-998521.jpg);
+    // background-image: url(../src/images/pexels-fox-998521.jpg);
     height: 85vh;
     width: 100%;
     background-size: cover;
@@ -443,16 +443,23 @@ form {
         color: grey;
     }
 
-    .blog-image-container1 {
-        width: 100%;
-        margin: 80px 0;
-        @include tabletMQ {
-            margin: 0;
-        }
+    .parallax-image-one, .parallax-image-two {
+        width: 90%;
+        margin-bottom: 0;
+        height: 600px;
+    }
 
-        img {
-            width: 80%;
-        }
+    .blog-image-container1 {
+        // width: 100%;
+        // margin: 80px 0;
+        // height: 100%;
+        // @include tabletMQ {
+        //     margin: 0;
+        // }
+
+        // img {
+        //     width: 80%;
+        // }
     }
 
 

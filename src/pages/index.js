@@ -5,6 +5,8 @@ import scrollTo from 'gatsby-plugin-smoothscroll';
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { Link } from 'gatsby';
 import SEO from '../components/SEO';
+import { Parallax } from 'react-parallax';
+import image from '../images/pexels-fox-998521.jpg';
 
 const IndexPage = () => {
 
@@ -12,7 +14,12 @@ const IndexPage = () => {
     <>
       <SEO />
       <Layout>
-        <div className="main-image-header" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
+        <Parallax className="main-image-header" 
+        bgImage={image} strength={500} 
+        bgImageAlt="A gold wedding band with white diamonds"
+        blur={{ min: -15, max: 15 }} 
+        >
+        <div  data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
           <div className="about-header-container">
             <div>
               <h1 className='about-header'>Creating Unforgettable Memories</h1>
@@ -21,7 +28,7 @@ const IndexPage = () => {
             <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown/></button>
           </div>
         </div>
-
+        </Parallax>
         <section className="about-section" id="about-content">
           <div className="wrapper">
             <h2>About Us</h2>
