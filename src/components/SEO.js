@@ -61,12 +61,13 @@ const SEO = ({title, description, image}) => {
                 telephone: '+1-613-737-3378',
                 address: {
                     '@type': 'PostalAddress',
-                    'streetAddress': '150 C Terence atthews Crescent',
+                    'streetAddress': '150 C Terence Matthews Crescent',
                     'addressLocality': 'Ottawa',
                     'addressRegion': 'ON',
                     'postalCode': 'K2M1X4',
                     'addressCountry': 'CA'
                 },
+                priceRange: '$$$',
             })}
             </script>
         </Helmet>
