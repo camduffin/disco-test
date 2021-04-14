@@ -29,7 +29,7 @@ const IndexPage = () => {
           </div>
         </div>
         </Parallax>
-        <section className="about-section" id="about-content">
+        <section className="about-section" id="about-content" data-sal="fade" data-sal-duration="1000">
           <div className="wrapper">
             <h2>About Us</h2>
             <p>We are here to help you turn your day into ourday!</p>

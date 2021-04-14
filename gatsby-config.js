@@ -3,7 +3,7 @@ module.exports = {
     title: "Our Day",
     titleTemplate: "Our Day",
     description: "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
-    url: "https://www.ourday.ca",
+    url: "https://production.d30jbkdozasx3y.amplifyapp.com/",
     image: "../images/wedding-bouqet.jpg",
     twitterUsername: "@iSiLIVE_Canada"
   },

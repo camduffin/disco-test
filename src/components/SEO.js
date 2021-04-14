@@ -52,28 +52,13 @@ const SEO = ({title, description, image}) => {
                 {{
                     '@context': 'https://schema.org',
                     '@type': 'Business',
-                    '@id': 'https://ourday.ca',
+                    url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
                     name: 'Our Day',
                     contactPoint: {
-                        '@type': 'ContactPoint',
-                        telephone: '+1 613 737 3378',
-                        contactType: 'Booking',
-                        email: 'info@ourday.ca',
-                    }, 
-                    address: {
-                        '@type': 'PostalAddress',
-                        streetAddress: '150 C Terence Matthews Crescent',
-                        addressLocality: "Ottawa",
-                        addressRegion: 'ON',
-                        postalCode: 'K2M1X4',
-                        addressCountry: 'CA',
-
-                    },
-                    geo: {
-                        '@type': 'GeoCoordinates',
-                        latitude: 45.2875974,
-                        longitude: -75.8756781
-                    },
+                    '@type': 'ContactPoint',
+                    telephone: '+1 613 737 3378',
+                    contactType: 'Support',
+                    },  
                 }}
             </StructuredData>
         </Helmet>
