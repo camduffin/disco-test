@@ -3,7 +3,6 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
-// import StructuredData from '../components/StructuredData';
 
 const SEO = ({title, description, image}) => {
 
@@ -58,23 +57,18 @@ const SEO = ({title, description, image}) => {
                 telephone: '+1-613-737-3378',
                 contactType: 'Support',
                 },
-                image: '../images/wedding-bouqet.jpg',
+                image: 'https://www.pexels.com/photo/gold-colored-diamond-engagement-ring-998521/',
+                telephone: '+1-613-737-3378',
+                address: {
+                    '@type': 'PostalAddress',
+                    'streetAddress': '150 C Terence atthews Crescent',
+                    'addressLocality': 'Ottawa',
+                    'addressRegion': 'ON',
+                    'postalCode': 'K2M1X4',
+                    'addressCountry': 'CA'
+                },
             })}
             </script>
-                {/* 
-            <StructuredData>
-                {{
-                    '@context': 'https://schema.org',
-                    '@type': 'Organization',
-                    url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
-                    name: 'Our Day',
-                    contactPoint: {
-                    '@type': 'ContactPoint',
-                    telephone: '+1-613-737-3378',
-                    contactType: 'Support',
-                    },  
-                }}
-            </StructuredData> */}
         </Helmet>
 
     )
