@@ -87,9 +87,9 @@ a {
 
 // Footer
 
-.footer {
+footer {
     width: 100%;
-    height: 30vh;
+    height: 50vh;
     background-color: $gold;
     margin-top: 100px;
     display: flex;
@@ -107,13 +107,18 @@ a {
         margin-top: 30px;
     }
 
+    .copyright-bottom {
+        width: 100%;
+        text-align: center;
+    }
+
     .footer-container {
         display: flex;
         justify-content: space-between;
         align-items: center;
         width: 70%;
         margin: 0 auto;
-        height: 30vh;
+        height: 40vh;
         min-width: 700px;
 
         @include tabletMQ {
@@ -140,6 +145,24 @@ a {
 
         @include tabletMQ {
             width: 200px;
+        }
+    }
+
+    .copyright {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .isi-logo {
+        opacity: .8;
+        border-radius: 5px;
+        width: 50%;
+        box-shadow: 5px 5px 8px $offwhite;
+
+        @include tabletMQ {
+            position: relative;
+            left: 12px;
         }
     }
 
