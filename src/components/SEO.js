@@ -57,7 +57,8 @@ const SEO = ({title, description, image}) => {
                 '@type': 'ContactPoint',
                 telephone: '+1-613-737-3378',
                 contactType: 'Support',
-                }
+                },
+                image: '../images/wedding-bouqet.jpg',
             })}
             </script>
                 {/* 
