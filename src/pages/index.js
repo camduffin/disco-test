@@ -34,7 +34,7 @@ const IndexPage = () => {
             <h2>About Us</h2>
             <p>We are here to help you turn your day into ourday!</p>
             <p className="paragraph">At iSiLIVE, we pride ourselves in developing innovative webcasting solutions for all kinds of occasions. We broadcast a wide spectrum of events each year - often on short timelines - so just let us know what, when and where and we will work with you to share your event with the right people.</p>
-            <p><Link className="message-link" to="/contact">Contact us</Link>today for questions or quotes. </p>
+            <p><Link className="message-link" to="/contact">Contact us</Link>today for questions or quotes.</p>
           </div>
         </section>
       </Layout>
