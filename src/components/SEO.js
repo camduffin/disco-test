@@ -50,13 +50,13 @@ const SEO = ({title, description, image}) => {
 
             <StructuredData>
                 {{
-                    '@context': 'http://schema.org',
-                    '@type': 'Business',
+                    '@context': 'https://schema.org',
+                    '@type': 'Organization',
                     url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
                     name: 'Our Day',
                     contactPoint: {
                     '@type': 'ContactPoint',
-                    telephone: '+1 613 737 3378',
+                    telephone: '+1-613-737-3378',
                     contactType: 'Support',
                     },  
                 }}
