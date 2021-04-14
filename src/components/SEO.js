@@ -50,7 +50,7 @@ const SEO = ({title, description, image}) => {
 
             <StructuredData>
                 {{
-                    '@context': 'https://schema.org',
+                    '@context': 'http://schema.org',
                     '@type': 'Business',
                     url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
                     name: 'Our Day',
