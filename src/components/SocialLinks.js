@@ -19,7 +19,7 @@ const SocialLinks = () => {
                     <a href="https://www.instagram.com/isilivecanada/?hl=en" target="_blank" rel="noreferrer noopener"><p className="sr-only">iSiLIVE Instagram</p><GrInstagram aria-hidden="true" aria-label="Instagram Icon"/></a>
                 </li>
                 <li>
-                    <a href="https://www.instagram.com/isilivecanada/?hl=en" target="_blank" rel="noreferrer noopener"><p className="sr-only">iSiLIVE Twitter</p><SiTwitter aria-hidden="true" aria-label="Twitter Icon"/></a>
+                    <a href="https://twitter.com/isilive_canada?lang=en" target="_blank" rel="noreferrer noopener"><p className="sr-only">iSiLIVE Twitter</p><SiTwitter aria-hidden="true" aria-label="Twitter Icon"/></a>
                 </li>
             </ul>
         </nav>

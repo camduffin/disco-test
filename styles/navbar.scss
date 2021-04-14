@@ -9,7 +9,7 @@
     position: relative;
     left: 14px;
 
-    @include bigTabletMQ {
+    @include tabletMQ {
         font-size: 3rem;
     }
 }
@@ -20,9 +20,10 @@
     position: relative;
     display: none;
 
-    @include bigTabletMQ {
-        font-size: 3rem;
+    @include tabletMQ {
+        font-size: 2.5rem;
         display: block;
+        left: 10px;
     }
 }
 
@@ -50,7 +51,7 @@ nav .logo {
     color: $gold;
     position: relative;
 
-    @include bigTabletMQ {
+    @include tabletMQ {
         font-size: 15px;
     }
 }
@@ -63,8 +64,8 @@ nav .logo2 {
     position: relative;
     display: none;
 
-    @include bigTabletMQ {
-        font-size: 15px;
+    @include tabletMQ {
+        font-size: 10px;
         display: block;
     } 
 }
@@ -72,7 +73,7 @@ nav .logo2 {
 .mobile-nav-logo {
     display: none;
 
-    @include bigTabletMQ {
+    @include tabletMQ {
         display: block;
     }
 }

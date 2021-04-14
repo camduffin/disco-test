@@ -133,6 +133,11 @@ a {
     }
 
     .phone {
+        display: flex;
+        flex-direction: column;
+        height: 100px;
+        justify-content: space-around;
+
         @include tabletMQ {
             width: 200px;
         }
@@ -279,6 +284,26 @@ a {
         font-size: 2.5rem;
         padding-right: 5px;
         color: $gold;
+    }
+}
+
+// Examples Section
+
+.examples {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    font-size: 2rem;
+    color: $darkgrey;
+    margin-top: 15vh;
+
+    h1 {
+        color: $gold;
+        padding-left: 10%;
+    }
+
+    p {
+        width: 60%;
     }
 }
 

@@ -13,7 +13,7 @@ $offwhitetrans: rgba(239, 241, 242, 0.7);
 }
 
 @mixin tabletMQ {
-    @media (max-width: 687px) {
+    @media (max-width: 768px) {
     @content;
     }
 }

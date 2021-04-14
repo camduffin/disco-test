@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Our Day",
     titleTemplate: "Our Day",
-    description: "Wedding livestreaming and webcasting for remote events.  We are here to help you turn your day into ourday!",
+    description: "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
     url: "http://www.ourday.ca",
   },
   plugins: [
