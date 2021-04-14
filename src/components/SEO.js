@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
-import StructuredData from '../components/StructuredData';
+// import StructuredData from '../components/StructuredData';
 
 const SEO = ({title, description, image}) => {
 
@@ -48,6 +48,19 @@ const SEO = ({title, description, image}) => {
 
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
+            <script type="application/ld+json">{JSON.stringify({
+                '@context': 'https://schema.org',
+                '@type': 'Organization',
+                url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
+                name: 'Our Day',
+                contactPoint: {
+                '@type': 'ContactPoint',
+                telephone: '+1-613-737-3378',
+                contactType: 'Support',
+                }
+            })}
+            </script>
+                {/* 
             <StructuredData>
                 {{
                     '@context': 'https://schema.org',
@@ -60,7 +73,7 @@ const SEO = ({title, description, image}) => {
                     contactType: 'Support',
                     },  
                 }}
-            </StructuredData>
+            </StructuredData> */}
         </Helmet>
 
     )
