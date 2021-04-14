@@ -3,7 +3,9 @@ module.exports = {
     title: "Our Day",
     titleTemplate: "Our Day",
     description: "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
-    url: "http://www.ourday.ca",
+    url: "https://www.ourday.ca",
+    image: "../images/wedding-bouqet.jpg",
+    twitterUsername: "@iSiLIVE_Canada"
   },
   plugins: [
     "react-icons",
@@ -11,8 +13,6 @@ module.exports = {
       resolve: "gatsby-plugin-google-fonts",
       options: {
         fonts: [
-          // "Roboto",
-          // "source sans serif\:300,400,400,700", 
           "Unna",
           "serif\:400,400i,700", 
         ],

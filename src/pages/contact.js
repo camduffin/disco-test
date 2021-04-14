@@ -9,9 +9,9 @@ import { MdEmail } from 'react-icons/md';
 const Contact = () => {
     return (
         <>
-            <SEO />
+            <SEO title="Contact"/>
             <Layout>
-                <div className="wrapper">
+                <main className="wrapper" data-sal="fade" data-sal-duration="1000">
                     <section data-sal="fade-in" className="contact-section">
                         <h2 className="contact-header">Contact</h2>
                         <nav>
@@ -24,7 +24,7 @@ const Contact = () => {
                             <ContactForm />
                         </div>
                     </section>
-                </div>
+                </main>
             </Layout>
         </>
     )

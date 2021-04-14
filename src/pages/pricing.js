@@ -6,9 +6,9 @@ import SEO from '../components/SEO';
 const PricingPage = () => {
     return (
         <>
-            <SEO />
+            <SEO title="Pricing" />
             <Layout>
-                <main className="wrapper" data-sal="fade-in" data-sal-easing="ease" data-sal-delay="100">
+                <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
                     <section className="pricing-section">
                         <h2>Pricing</h2>
                         <p>Your event is special. We pride ourselves on creating innovative solutions. As such, iSiLIVE offers specific quotes for your specific event. 
