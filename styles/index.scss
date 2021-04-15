@@ -342,6 +342,7 @@ footer {
     h1 {
         color: $gold;
         padding-left: 10%;
+        font-size: 5rem;
     }
 
     p {
@@ -361,6 +362,11 @@ footer {
     width: 70%;
     margin: 0 auto;
     margin-top: 15vh;
+
+    h1 {
+        color: $gold;
+        font-size: 5rem;
+    }
 
     li {
         padding: 10px 6px;
@@ -457,6 +463,11 @@ form {
         padding-left: 10%;
     }
 
+    h1 {
+        color: $gold;
+        font-size: 5rem;
+    }
+
     p {
         width: 60%;
 
@@ -511,6 +522,11 @@ form {
         }
     }
 
+    h1 {
+        color: $gold;
+        font-size: 5rem;
+    }
+
     p {
         width: 90%;
     }
@@ -523,14 +539,6 @@ form {
     h4 {
         color: grey;
     }
-
-    // .parallax-image-one, .parallax-image-two {
-    //     width: 90%;
-    //     margin-bottom: 0;
-    //     height: 600px;
-    // }
-
-    // Original Img Containers (before Parallax)
 
     .blog-image-container1 {
         width: 100%;
@@ -573,6 +581,11 @@ form {
         padding-left: 10%;
     }
 
+    h1 {
+        color: $gold;
+        font-size: 5rem;
+    }
+
     p {
         width: 60%;
 
@@ -604,7 +617,6 @@ form {
         font-size: 5rem;
         position: relative;
         left: 24px;
-    
     }
 
     .logo {

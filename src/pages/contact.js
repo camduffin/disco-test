@@ -13,7 +13,7 @@ const Contact = () => {
             <Layout>
                 <main className="wrapper" data-sal="fade" data-sal-duration="1000">
                     <section data-sal="fade-in" className="contact-section">
-                        <h2 className="contact-header">Contact</h2>
+                        <h1 className="contact-header">Contact</h1>
                         <nav>
                             <ul>
                                 <li> <a href="tel:+1-613-737-3378"><FaPhone aria-hidden="true"/> 613-737-3378</a></li>

@@ -13,7 +13,7 @@ const Blog = () => {
             <Layout>
                 <main className="wrapper">
                     <section className="blog-section">
-                        <h2 className="blog-header" data-sal="slide-right" data-sal-duration="1000">Blog</h2>
+                        <h1 className="blog-header" data-sal="slide-right" data-sal-duration="1000">Blog</h1>
                         <div className="blog-container1">
                             <div className="blog-text-container1">
                                 <h3>Hosting a backyard wedding during Covid </h3>

@@ -11,7 +11,7 @@ const HowPage = () => {
             <Layout>
                 <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
                     <section className="how-section">
-                        <h2>How it Works</h2>
+                        <h1>How it Works</h1>
                         <p>First, tell us about your event! This allows us to figure out your requirements. (Such as how many cameras and microphones are needed, what time frames, are there multiple livestream locations, etc.) We then prepare a quote tailored to your event.</p>
                         <p>Before your day, we perform an onsite visit with testing for a no surprises livestream. For your day, we set up as early as possible, and along with any broadcast staff onsite, there's technicians monitoring the feed remotely to ensure your broadcast goes smoothly. (Our onsite staff dress well, wear masks and adhere to Covid19 guidelines.)</p>
                         <p>The livestream video window is embedded to your website - we can provide you with a page, or work with yours - with a countdown clock on it. We provide you with an invitation link to send your invited guests. We handle the hosting and streaming.</p>
