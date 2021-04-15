@@ -29,6 +29,8 @@ const SEO = ({title, description, image}) => {
         <Helmet title={seo.title} titleTemplate={titleTemplate}>
             <meta name="description" content={seo.description} />
 
+            <meta name="keywords" content="wedding, big event, celebration, recognition, achievement, graduation, birthday, anniversary, appreciation, party, vows, livestream, webcast, broadcast, milestone, event, speech, live address, formal, wedding webcast, wedding livestream, venue, wedding venue, livestream venue, webcast venue, videographers, party webcast"/>
+
             {seo.url && <meta property="og:url" content={seo.url} />}
 
             {seo.title && <meta property="og:title" content={seo.title} />}
