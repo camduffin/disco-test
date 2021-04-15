@@ -6,7 +6,7 @@ import SEO from '../components/SEO';
 const PricingPage = () => {
     return (
         <>
-            <SEO title="Pricing" />
+            <SEO />
             <Layout>
                 <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
                     <section className="pricing-section">

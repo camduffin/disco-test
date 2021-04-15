@@ -10,7 +10,7 @@ const Blog = () => {
 
     return (
         <>
-            <SEO title="Blog"/>
+            <SEO />
             <Layout>
                 <main className="wrapper">
                     <section className="blog-section">

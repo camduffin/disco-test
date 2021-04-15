@@ -7,7 +7,7 @@ import { Link } from 'gatsby';
 const HowPage = () => {
     return (
         <>
-            <SEO title="How It Works" />
+            <SEO />
             <Layout>
                 <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
                     <section className="how-section">

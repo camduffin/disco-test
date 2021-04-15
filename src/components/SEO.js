@@ -52,7 +52,7 @@ const SEO = ({title, description, image}) => {
             <script type="application/ld+json">{JSON.stringify({
                 '@context': 'https://schema.org',
                 '@type': 'LocalBusiness',
-                url: 'https://production.d30jbkdozasx3y.amplifyapp.com/',
+                url: 'https://production.d203rjsqyj89or.amplifyapp.com/',
                 name: 'Our Day',
                 contactPoint: {
                 '@type': 'ContactPoint',

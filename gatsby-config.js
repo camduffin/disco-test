@@ -4,8 +4,8 @@ module.exports = {
     titleTemplate: "Our Day",
     description: "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
     keywords: "wedding, big event, celebration, recognition, achievement, graduation, birthday, anniversary, appreciation, party, vows, livestream, webcast, broadcast, milestone, event, speech, live address, formal, wedding webcast, wedding livestream, venue, wedding venue, livestream venue, webcast venue, videographers, party webcast", 
-    url: "https://production.d30jbkdozasx3y.amplifyapp.com/",
-    image: "../images/wedding-bouqet.jpg",
+    url: "https://production.d203rjsqyj89or.amplifyapp.com/",
+    image: "src/images/wedding-bouqet.jpg",
     twitterUsername: "@iSiLIVE_Canada",
   },
   plugins: [

@@ -6,7 +6,7 @@ const Example = () => {
 
     return (
         <>
-            <SEO title="Examples" />
+            <SEO />
             <Layout>
                 <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
                     <section className="examples">

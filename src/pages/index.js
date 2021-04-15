@@ -12,7 +12,7 @@ const IndexPage = () => {
 
   return (
     <>
-      <SEO title="Home" />
+      <SEO />
       <Layout>
         <Parallax className="main-image-header" 
         bgImage={image} strength={500} 
