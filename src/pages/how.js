@@ -3,13 +3,20 @@ import '../../styles/index.scss';
 import Layout from '../components/Layout';
 import SEO from '../components/SEO';
 import { Link } from 'gatsby';
+import { Parallax } from 'react-parallax';
+import flowerBG from '../images/flower-background.jpg';
 
 const HowPage = () => {
     return (
         <>
             <SEO />
             <Layout>
-                <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
+                <Parallax className="main-image-header" 
+                bgImage={flowerBG} strength={500} 
+                bgImageAlt="A gold wedding band with white diamonds"
+                blur={{ min: -15, max: 15 }} 
+                >
+                <main className="wrapper how-main" data-sal="slide-right" data-sal-duration="1000">
                     <section className="how-section">
                         <h1>How it Works</h1>
                         <p>First, tell us about your event! This allows us to figure out your requirements. (Such as how many cameras and microphones are needed, what time frames, are there multiple livestream locations, etc.) We then prepare a quote tailored to your event.</p>
@@ -19,6 +26,7 @@ const HowPage = () => {
                         <p data-sal="slide-right" data-sal-duration="1000">Check out an example<Link className="message-link" to="/example">HERE</Link></p> 
                     </section>
                 </main>
+                </Parallax>
             </Layout>
         </>
     )

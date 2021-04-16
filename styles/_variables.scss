@@ -10,7 +10,7 @@ $aquatrans: rgba(213, 222, 226, 0.7);
 // media query mixins
 
 @mixin bigTabletMQ {
-    @media (max-width: 1050px) {
+    @media (max-width: 1091px) {
     @content;
     }
 }

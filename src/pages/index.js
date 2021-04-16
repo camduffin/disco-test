@@ -21,7 +21,7 @@ const IndexPage = () => {
         >
         <div>
           <div className="about-header-container">
-              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating <span>Unforgettable</span>Memories</h1>
+              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating <span>Unforgettable</span> Memories</h1>
               <h2 data-sal="slide-left" data-sal-duration="1000">www.OurDay.ca</h2>
             <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown aria-label="Scroll Down"/></button>
           </div>
