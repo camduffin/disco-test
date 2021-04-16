@@ -59,6 +59,7 @@ module.exports = {
         icon: "src/images/gold-flower.png",
       },
     },
+    "gatsby-plugin-offline",
     "gatsby-plugin-sharp",
     "gatsby-transformer-sharp",
     {
