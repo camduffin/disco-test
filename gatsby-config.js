@@ -5,7 +5,7 @@ module.exports = {
     description: "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
     keywords: "wedding, big event, celebration, recognition, achievement, graduation, birthday, anniversary, appreciation, party, vows, livestream, webcast, broadcast, milestone, event, speech, live address, formal, wedding webcast, wedding livestream, venue, wedding venue, livestream venue, webcast venue, videographers, party webcast", 
     url: "https://production.d203rjsqyj89or.amplifyapp.com/",
-    image: "/wedding-bouqet.jpg",
+    image: "/beach-altar.jpg",
     twitterUsername: "@iSiLIVE_Canada",
   },
   plugins: [
@@ -36,7 +36,7 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `pages`,
-        path: `${__dirname}/src/pages/`,
+        path: `./src/pages/`,
       },
     },
     "gatsby-plugin-react-helmet",
@@ -51,8 +51,7 @@ module.exports = {
       resolve: "gatsby-plugin-manifest",
       options: {
         name: "Our Day",
-        short_name: "Our Day",
-        start_url: "/",
+        start_url: ".",
         background_color: "#EFF1F2",
         theme_color: "#AF9453",
         display: "fullscreen",

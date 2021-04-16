@@ -1,11 +1,16 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import '../../styles/index.scss';
-import balloonImage from '../images/balloons.jpg';
-import fireworksImage from '../images/fireworks.jpg';
+// import balloonImage from '../images/balloons.jpg';
+// import fireworksImage from '../images/fireworks.jpg';
 import SEO from '../components/SEO';
+import { StaticImage } from 'gatsby-plugin-image';
+
 
 const Blog = () => {
+
+    const balloonImage = '../images/balloons.jpg';
+    const fireworksImage = '../images/fireworks.jpg';
 
     return (
         <>
@@ -18,19 +23,25 @@ const Blog = () => {
                             <div className="blog-text-container1" >
                                 <h3>Hosting a backyard wedding during Covid </h3>
                                 <h4>April 1st, 2021</h4>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam possimus nesciunt commodi quibusdam ex amet minima! Asperiores fuga inventore aut magni quae! Doloremque nam nihil repudiandae quidem temporibus nobis voluptatibus necessitatibus possimus minima officia? Deleniti perferendis sapiente inventore labore, et nisi aut maxime asperiores mollitia id. Vitae facilis laudantium nam perspiciatis. Iure autem ea voluptates maxime hic repellendus excepturi ipsa officia, sequi ab repellat quidem optio dolore dicta magni provident dolor voluptas aperiam nemo, veritatis eligendi quo quasi reiciendis? Et, quibusdam vitae explicabo hic fuga consequuntur inventore labore voluptatum quas, eos, tempore dolore illo ullam amet provident maiores perferendis aut magni quis harum temporibus est molestias? Assumenda facilis obcaecati vitae nam voluptatibus, nihil rem ullam vero dicta incidunt quis eos! Mollitia quam quidem nam saepe. Consequatur iusto non possimus blanditiis tempora et porro quis ullam, temporibus illum, cumque eaque earum a tenetur. Repudiandae iusto quaerat totam fuga officiis? Sequi ipsum cum iste ipsa autem voluptate, quas minima, pariatur molestiae, quisquam amet! Aut harum iste dignissimos perspiciatis quod dolor molestiae, illo culpa reprehenderit eveniet aspernatur commodi quam necessitatibus id ducimus dolorem cupiditate quasi adipisci magni, molestias sequi consectetur fugiat aperiam? Alias impedit velit dolor nulla cum cumque fugiat consectetur, dolorem illo neque beatae.</p> 
+                                <p>In the strange summer of 2019, my Cousin and his lovely Fiance were engaged to be married. The couple had already planned it, booked it, sent out the Save-The-Dates and then, like so many couples around the world, they found their plans had changed and they had to either wait or get a lot more creative.</p> 
 
-                                <div data-sal="slide-right" data-sal-duration="1000" className="blog-image-container1"  >
-                                    <img src={balloonImage} alt="Ballons floating with lights surrounding them."/> 
+                                <p>Coming from a culture that celebrates marriage with large gatherings of extended family, Cousin faced a unique challenge. Webcasting their wedding became a key way to bring tradition and togetherness to family and friends, while also respecting the rules and shared responsibilities of a pandemic gathering.</p>
+
+                                <div className="blog-image-container1"  >
+                                    {/* <img src={balloonImage} alt="Ballons floating with lights surrounding them."/>  */}
+                                    <StaticImage src={balloonImage} alt="Lit up floating balloons" placeholder="blurred"/>
                                 </div>   
                     
-                                <p data-sal="slide-right" data-sal-duration="1000">Tempore similique eligendi necessitatibus quos? Incidunt porro dignissimos id! Odio sunt accusamus maxime doloribus doloremque excepturi repellendus cum! Quos odit, beatae quidem culpa quisquam quae modi quam tempore dolore eaque esse? Pariatur quo eius, consequuntur harum nihil asperiores eaque tenetur ratione quidem ducimus iste vero quia, officiis quisquam sed aliquam dicta nesciunt dolores. Enim tempora omnis quisquam, autem hic earum quod fuga reprehenderit aperiam? Hic a veritatis, voluptatem, natus ipsa error sed iure sit rerum exercitationem atque labore voluptate libero fugiat temporibus eum! Quod voluptates officia et illum, excepturi temporibus? Illo numquam delectus nulla pariatur laboriosam iste explicabo maxime ut, voluptate, quia, provident sed doloremque esse rerum.</p> 
+                                <p data-sal="slide-right" data-sal-duration="1000">Creativity, caution and consideration were the other keys to making their wedding a safe and spectacular day. With our backyard as the venue, and a very small group of family as guests, we set about making it work - making sure we had arranged for distance and smooth flow as the evening turned from procession to reception.</p> 
                                 
-                                <p data-sal="slide-right" data-sal-duration="1000">Laboriosam, maxime sed amet quidem aliquam asperiores, pariatur perspiciatis quos at nisi magni minus temporibus ipsa, praesentium corporis? Delectus sint reiciendis voluptatum deleniti ratione in magnam quis modi labore ipsam dicta, ea sit voluptatibus at veniam harum inventore illum maxime eveniet voluptate reprehenderit doloremque quaerat pariatur. Sit molestias delectus neque nemo? Provident numquam voluptatem possimus repudiandae necessitatibus assumenda nostrum, ex quaerat recusandae quod, porro libero officiis consequuntur pariatur obcaecati, impedit enim laudantium explicabo eaque laboriosam magni veritatis culpa blanditiis. Eos fugiat dicta ad inventore, quam sed quos repudiandae soluta et omnis!</p>
+                                <p data-sal="slide-right" data-sal-duration="1000">Obvious bias aside, livestreaming the wedding was terrific! We set up the couple with a webpage link to send to all their guests. The page had pictures, embedded video with a countdown so guests around the world knew where and when to join live, and a link to the couple’s vows and honeymoon fund.</p>
 
-                                <div data-sal="slide-left" data-sal-duration="1000" className="blog-image-container2">
-                                    <img src={fireworksImage} alt="Colourful fireworks going off in a large backyard celebration"/> 
+                                <div className="blog-image-container2">
+                                    {/* <img src={fireworksImage} alt="Colourful fireworks going off in a large backyard celebration"/>  */}
+                                    <StaticImage src={fireworksImage} alt="fireworks" placeholder="blurred"/>
                                 </div>
+
+                                <p>Using a two camera set up - a fixed camera and a videographer - and working alongside the couples’ photographer, iSiLIVE broadcast the procession, vows and a heartfelt speech designed to include everyone. Following that, the newlyweds toasted their remote guests and got down to dancing the night away. It was beautiful.</p>
                             </div>
                         </div>
                     </section>
