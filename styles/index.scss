@@ -112,7 +112,6 @@ footer {
     color: $offwhite;
 
     @include tabletMQ {
-        height: auto;
         align-items: center;
         justify-content: center;
         padding-top: 50px;
@@ -133,12 +132,13 @@ footer {
         justify-content: space-between;
         align-items: center;
         width: 70%;
-        margin: 0 auto;
         height: 40vh;
+        margin: 0 auto;
         min-width: 700px;
 
         @include tabletMQ {
             width: 80%;
+            height: 80vh;
             min-width: 200px;
             flex-direction: column-reverse;
             // height: 80vh;
@@ -148,9 +148,6 @@ footer {
             justify-content: space-between;
         }
 
-        // @include phoneMQ {
-        //     height: 100vh;
-        // }
     }
 
     .phone {
@@ -158,6 +155,14 @@ footer {
         flex-direction: column;
         height: 100px;
         justify-content: space-around;
+
+        a {
+            transition: all .2s ease-in-out;
+        }
+
+        a:hover, a:focus {
+            color: $gold;
+        }
 
         @include tabletMQ {
             width: 200px;
@@ -175,6 +180,13 @@ footer {
         border-radius: 5px;
         width: 50%;
         box-shadow: 5px 5px 8px $offwhite;
+        transition: all .2s ease-in-out;
+
+        &:hover, 
+        &:focus {
+            opacity: .5;
+            transform: scale(1.1);
+        }
 
         @include tabletMQ {
             position: relative;
@@ -229,11 +241,18 @@ footer {
         
         svg {
             font-size: 3rem;
+            transition: all .2s ease-in-out;
+
+            &:hover,
+            &:focus {
+                color: $gold;
+            }
         }
 
         &:hover,
         &:focus {
             transform: scale(1.4);
+            color: $gold;
         }
     }
 
@@ -270,7 +289,7 @@ footer {
         font-size: 8rem;
         opacity: 1;
         color: white;
-        text-shadow: 1px 1px 15px $lightblue;
+        text-shadow: 1px 1px 40px black;
 
         @include tabletMQ {
             font-size: 6rem;
@@ -283,7 +302,7 @@ footer {
 
     h2 {
         color: white;
-        text-shadow: 1px 1px 15px $lightblue;
+        text-shadow: 1px 1px 40px black;
         opacity: 1;
 
         @include bigTabletMQ {
@@ -321,12 +340,12 @@ footer {
     .message-link {
         font-size: 2.5rem;
         padding-right: 5px;
-        color: $gold;
+        color: $lightblue;
         transition: all .2s ease-in-out;
 
         &:hover,
         &:focus {
-            color: grey;
+            color: $gold;
         }
     }
 }
@@ -380,6 +399,13 @@ footer {
     a {
         color: grey;
         margin: 0;
+        transition: all .2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $gold;
+            transform: scale(1.2);
+        }
     }
 
 }
@@ -555,6 +581,7 @@ form {
 
         img {
             width: 50%;
+            border-radius: 8px;
         }
     }
 
@@ -567,7 +594,19 @@ form {
         }
 
         img {
-            width: 80%;
+            width: 60%;
+            border-radius: 8px;
+        }
+    }
+
+    .message-link-blog {
+        color: $lightblue;
+        font-size: 3rem;
+        transition: all 0.2s ease-in-out;
+
+        &:hover,
+        &:focus {
+            color: $gold;
         }
     }
 

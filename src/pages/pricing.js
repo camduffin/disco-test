@@ -15,7 +15,7 @@ const PricingPage = () => {
         <>
             <SEO />
             <Layout>
-                <main className="wrapper" data-sal="fade" data-sal-duration="1000">
+                <main className="wrapper" data-sal="fade" data-sal-duration="1500">
                     <section className="pricing-section">
                         <div className="pricing-text-container">
                             <h1>Pricing</h1>

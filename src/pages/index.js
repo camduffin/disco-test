@@ -19,7 +19,7 @@ const IndexPage = () => {
         bgImageAlt="A gold wedding band with white diamonds"
         blur={{ min: -15, max: 15 }} 
         >
-        <div>
+        <div data-sal="fade" data-sal-duration="1500">
           <div className="about-header-container" data-sal="fade" data-sal-duration="1000">
               <h1 className='about-header'>Creating <span>Unforgettable</span> Memories</h1>
               <h2>www.OurDay.ca</h2>
@@ -27,7 +27,7 @@ const IndexPage = () => {
           </div>
         </div>
         </Parallax>
-        <section className="about-section" id="about-content" data-sal="fade" data-sal-duration="1000">
+        <section className="about-section" id="about-content" data-sal="fade" data-sal-duration="1500">
           <div className="wrapper">
             <h2>About Us</h2>
             <p>We are here to help you turn your day into ourday!</p>
