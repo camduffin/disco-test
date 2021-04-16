@@ -8,7 +8,7 @@ const Example = () => {
         <>
             <SEO />
             <Layout>
-                <main className="wrapper" data-sal="slide-right" data-sal-duration="1000">
+                <main className="wrapper" data-sal="fade" data-sal-duration="1000">
                     <section className="examples">
                             <h1>Examples</h1>
                     </section>

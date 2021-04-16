@@ -20,9 +20,9 @@ const IndexPage = () => {
         blur={{ min: -15, max: 15 }} 
         >
         <div>
-          <div className="about-header-container">
-              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating <span>Unforgettable</span> Memories</h1>
-              <h2 data-sal="slide-left" data-sal-duration="1000">www.OurDay.ca</h2>
+          <div className="about-header-container" data-sal="fade" data-sal-duration="1000">
+              <h1 className='about-header'>Creating <span>Unforgettable</span> Memories</h1>
+              <h2>www.OurDay.ca</h2>
             <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown aria-label="Scroll Down"/></button>
           </div>
         </div>
