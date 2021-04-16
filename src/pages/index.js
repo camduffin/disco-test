@@ -6,7 +6,7 @@ import { HiOutlineArrowNarrowDown } from 'react-icons/hi';
 import { Link } from 'gatsby';
 import SEO from '../components/SEO';
 import { Parallax } from 'react-parallax';
-import image from '../images/pexels-fox-998521.jpg';
+import image from '../images/beach-altar.jpg';
 
 const IndexPage = () => {
 
@@ -21,11 +21,9 @@ const IndexPage = () => {
         >
         <div>
           <div className="about-header-container">
-            <div>
-              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating Unforgettable Memories</h1>
+              <h1 className='about-header' data-sal="slide-right" data-sal-duration="1000">Creating <span>Unforgettable</span>Memories</h1>
               <h2 data-sal="slide-left" data-sal-duration="1000">www.OurDay.ca</h2>
-            </div>
-            <button className="down-arrow" data-sal="slide-up" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown aria-label="Scroll Down"/></button>
+            <button className="down-arrow" onClick={() => scrollTo('#about-content')}><HiOutlineArrowNarrowDown aria-label="Scroll Down"/></button>
           </div>
         </div>
         </Parallax>

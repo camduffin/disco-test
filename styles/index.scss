@@ -58,10 +58,11 @@ a {
 .down-arrow {
     border: none;
     background-color: transparent;
-    color: $offwhite;
-    font-size: 3rem;
+    color: white;
+    font-size: 3.5rem;
     cursor: pointer;
     animation: bounce 4s infinite;
+    padding-top: 100px;
 
     @include phoneMQ {
         margin: 100px 0;
@@ -238,36 +239,26 @@ footer {
 
 .main-image-header {
     // background-image: url(../src/images/pexels-fox-998521.jpg);
-    height: 85vh;
+    height: 100vh;
     width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
-    margin-top: 15vh;
 
-    @include tabletMQ {
-        height: auto;
-        padding: 100px 0;
-    }
-}
-
-.about-header {
-    color: $offwhite;
-    margin-top: 0;
-    margin-left: 200px;
-    margin-top: 120px;
-    
-    @include phoneMQ {
-        padding-left: 40%;
-        margin-left: 0;
-    }
+    // @include tabletMQ {
+    //     height: auto;
+    //     padding: 100px 0;
+    // }
 }
 
 .about-header-container {
     display: flex;
-    width: 50%;
+    width: 100%;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
+    height: 100vh;
+    padding-top: 300px;
 
     @include phoneMQ {
         width: 40%;
@@ -275,7 +266,9 @@ footer {
 
     h1 {
         font-size: 8rem;
-        opacity: .8;
+        opacity: 1;
+        color: white;
+        text-shadow: 1px 1px 15px $lightblue;
 
         @include tabletMQ {
             font-size: 6rem;
@@ -287,16 +280,15 @@ footer {
     }
 
     h2 {
-        color: $offwhite;
-        margin-left: 200px;
-        opacity: .8;
+        color: white;
+        text-shadow: 1px 1px 15px $lightblue;
+        opacity: 1;
 
         @include phoneMQ {
             font-size: 3rem;
             margin-left: 150px;
         }
 
-        
     }
 }
 // About Section
