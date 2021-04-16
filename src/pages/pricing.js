@@ -2,14 +2,14 @@ import React from 'react';
 import Layout from '../components/Layout';
 import '../../styles/index.scss';
 import SEO from '../components/SEO';
-// import champagneImage from '../images/champagne.jpg';
-// import glassImage from '../images/glasses.jpg';
-import { StaticImage } from 'gatsby-plugin-image';
+import champagneImage from '../images/champagne.jpg';
+import glassImage from '../images/glasses.jpg';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 const PricingPage = () => {
 
-    const champagneImage = '../images/champagne.jpg';
-    const glassImage = '../images/glasses.jpg';
+    // const champagneImage = '../images/champagne.jpg';
+    // const glassImage = '../images/glasses.jpg';
 
     return (
         <>
@@ -23,10 +23,10 @@ const PricingPage = () => {
                             There is typically a 3 hour minimum charge to cover things such as travel time, site visit, testing, set up and tear down. That is a minimum $1,500.00.</p>
                         </div>
                         <div className="pricing-image-container" data-sal="fade" data-sal-duration="3000">
-                            {/* <img src={champagneImage} alt=""/>
-                            <img src={glassImage} alt=""/> */}
-                            <StaticImage src={champagneImage} alt="champagne" placeholder="blurred"/>
-                            <StaticImage src={glassImage} alt="glasses" placeholder="blurred"/>
+                            <img src={champagneImage} alt="Bottles of champagne placed in a bucket of ice"/>
+                            <img src={glassImage} alt="Two champagne glasses placed on a table"/>
+                            {/* <StaticImage src={champagneImage} alt="champagne" placeholder="blurred"/>
+                            <StaticImage src={glassImage} alt="glasses" placeholder="blurred"/> */}
                         </div>
                     </section>
                 </main>

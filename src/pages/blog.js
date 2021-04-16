@@ -1,16 +1,16 @@
 import React from 'react';
 import Layout from '../components/Layout';
 import '../../styles/index.scss';
-// import balloonImage from '../images/balloons.jpg';
-// import fireworksImage from '../images/fireworks.jpg';
+import balloonImage from '../images/balloons.jpg';
+import fireworksImage from '../images/fireworks.jpg';
 import SEO from '../components/SEO';
-import { StaticImage } from 'gatsby-plugin-image';
+// import { StaticImage } from 'gatsby-plugin-image';
 
 
 const Blog = () => {
 
-    const balloonImage = '../images/balloons.jpg';
-    const fireworksImage = '../images/fireworks.jpg';
+    // const balloonImage = '../images/balloons.jpg';
+    // const fireworksImage = '../images/fireworks.jpg';
 
     return (
         <>
@@ -28,20 +28,22 @@ const Blog = () => {
                                 <p>Coming from a culture that celebrates marriage with large gatherings of extended family, Cousin faced a unique challenge. Webcasting their wedding became a key way to bring tradition and togetherness to family and friends, while also respecting the rules and shared responsibilities of a pandemic gathering.</p>
 
                                 <div className="blog-image-container1"  >
-                                    {/* <img src={balloonImage} alt="Ballons floating with lights surrounding them."/>  */}
-                                    <StaticImage src={balloonImage} alt="Lit up floating balloons" placeholder="blurred"/>
+                                    <img src={balloonImage} alt="Ballons floating with lights surrounding them."/> 
+                                    {/* <StaticImage src={balloonImage} alt="Lit up floating balloons" placeholder="blurred"/> */}
                                 </div>   
                     
                                 <p data-sal="slide-right" data-sal-duration="1000">Creativity, caution and consideration were the other keys to making their wedding a safe and spectacular day. With our backyard as the venue, and a very small group of family as guests, we set about making it work - making sure we had arranged for distance and smooth flow as the evening turned from procession to reception.</p> 
                                 
-                                <p data-sal="slide-right" data-sal-duration="1000">Obvious bias aside, livestreaming the wedding was terrific! We set up the couple with a webpage link to send to all their guests. The page had pictures, embedded video with a countdown so guests around the world knew where and when to join live, and a link to the couple’s vows and honeymoon fund.</p>
+                                <p data-sal="slide-right" data-sal-duration="1000">Livestreaming the wedding was straightforward and smooth. Ourday.ca set up the couple with a webpage link to send to all their guests. The page had pictures, embedded video with a countdown so guests around the world knew where and when to join live, and a link to the couple’s vows and honeymoon fund.</p>
 
                                 <div className="blog-image-container2">
-                                    {/* <img src={fireworksImage} alt="Colourful fireworks going off in a large backyard celebration"/>  */}
-                                    <StaticImage src={fireworksImage} alt="fireworks" placeholder="blurred"/>
+                                    <img src={fireworksImage} alt="Colourful fireworks going off in a large backyard celebration"/> 
+                                    {/* <StaticImage src={fireworksImage} alt="fireworks" placeholder="blurred"/> */}
                                 </div>
 
-                                <p>Using a two camera set up - a fixed camera and a videographer - and working alongside the couples’ photographer, iSiLIVE broadcast the procession, vows and a heartfelt speech designed to include everyone. Following that, the newlyweds toasted their remote guests and got down to dancing the night away. It was beautiful.</p>
+                                <p>Using a two camera set up - a fixed camera and a videographer - and working alongside the couples’ photographer, ourday.ca broadcast the procession, vows and a heartfelt speech designed to include everyone. Following that, the newlyweds toasted their remote guests and got down to dancing the night away. It was a beautiful way for all of us to be a part of their day.</p>
+
+                                <p>Your day - whether it’s a wedding, birthday, graduation, or any special event - is going to be memorable. We can help, contact us ourday.ca.</p>
                             </div>
                         </div>
                     </section>

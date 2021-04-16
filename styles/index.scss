@@ -460,9 +460,8 @@ form {
     font-size: 2rem;
     color: $darkgrey;
     margin-left: 100px;
-    margin-top: 12vh;
+    margin-top: 15vh;
     margin-bottom: 150px;
-
 
     @include tabletMQ {
         margin: 15vh 0 0 0;
@@ -506,6 +505,7 @@ form {
     font-size: 2rem;
     color: $darkgrey;
     margin-top: 15vh;
+    margin-bottom: 100px;
 
     @include bigTabletMQ {
         margin-left: 0;
