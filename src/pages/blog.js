@@ -42,9 +42,11 @@ const Blog = () => {
                                     {/* <StaticImage src={fireworksImage} alt="fireworks" placeholder="blurred"/> */}
                                 </div>
 
-                                <p data-sal="fade" data-sal-duration="1500">Using a two camera set up - a fixed camera and a videographer - and working alongside the couples’ photographer, ourday.ca broadcast the procession, vows and a heartfelt speech designed to include everyone. Following that, the newlyweds toasted their remote guests and got down to dancing the night away. It was a beautiful way for all of us to be a part of their day.</p>
+                                <div className="last-blog-para">
+                                    <p data-sal="fade" data-sal-duration="1500">Using a two camera set up - a fixed camera and a videographer - and working alongside the couples’ photographer, ourday.ca broadcast the procession, vows and a heartfelt speech designed to include everyone. Following that, the newlyweds toasted their remote guests and got down to dancing the night away. It was a beautiful way for all of us to be a part of their day.</p>
 
-                                <p data-sal="fade" data-sal-duration="1500">Your day - whether it’s a wedding, birthday, graduation, or any special event - is going to be memorable. We can help, <Link className="message-link-blog" to="/contact">contact us.</Link></p>
+                                    <p data-sal="fade" data-sal-duration="1500">Your day - whether it’s a wedding, birthday, graduation, or any special event - is going to be memorable. <span> We can help, <Link className="message-link-blog" to="/contact">contact us.</Link></span></p>
+                                </div>
                             </div>
                         </div>
                     </section>
