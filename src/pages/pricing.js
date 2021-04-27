@@ -3,7 +3,6 @@ import Layout from '../components/Layout';
 import '../../styles/index.scss';
 import SEO from '../components/SEO';
 import partyBalloons from '../images/party-balloons.jpg';
-import cake from '../images/cake.jpg';
 import sparkle from '../images/sparkle.jpg';
 import { Parallax } from 'react-parallax';
 import { Link } from 'gatsby';

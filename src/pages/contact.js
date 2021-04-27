@@ -12,8 +12,8 @@ const Contact = () => {
         <>
             <SEO />
             <Layout>
-                <main className="wrapper" data-sal="fade" data-sal-duration="1500">
-                    <section data-sal="fade-in" className="contact-section">
+                <main className="wrapper">
+                    <section className="contact-section">
                         <div className="contact-container">
                             <nav>
                                 <ul>

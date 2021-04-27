@@ -26,7 +26,8 @@ const SEO = ({title, description, image}) => {
     }
 
     return (
-        <Helmet title={seo.title} titleTemplate={titleTemplate}>
+        <Helmet title={seo.title} titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}>
+            
             <meta name="description" content={seo.description} />
 
             <meta name="keywords" content="wedding, big event, celebration, recognition, achievement, graduation, birthday, anniversary, appreciation, party, vows, livestream, webcast, broadcast, milestone, event, speech, live address, formal, wedding webcast, wedding livestream, venue, wedding venue, livestream venue, webcast venue, videographers, party webcast"/>
@@ -59,7 +60,7 @@ const SEO = ({title, description, image}) => {
                 telephone: '+1-613-737-3378',
                 contactType: 'Support',
                 },
-                image: 'https://www.pexels.com/photo/gold-colored-diamond-engagement-ring-998521/',
+                image: '../images/beach-altar.jpg',
                 telephone: '+1-613-737-3378',
                 address: {
                     '@type': 'PostalAddress',
@@ -84,12 +85,14 @@ SEO.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     image: PropTypes.string,
+    lang: PropTypes.string,
 }
 
 SEO.defaultProps = {
     title: null,
     description: null,
     image: null,
+    lang: 'en'
 }
 
 const query = graphql`

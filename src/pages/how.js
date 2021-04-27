@@ -10,12 +10,12 @@ const HowPage = () => {
         <>
             <SEO />
             <Layout>
-                <Parallax className="main-image-header" 
+                <Parallax className="how-image-header" 
                 bgImage={flowerBG} strength={500} 
                 bgImageAlt="A gold wedding band with white diamonds"
                 blur={{ min: -15, max: 15 }} 
                 >
-                <main className="wrapper how-main" data-sal="fade" data-sal-duration="1500">
+                <main className="wrapper how-main">
                     <section className="how-section">
                         <h1>How it Works</h1>
                         <p>First, tell us about your event! This allows us to figure out your requirements. (Such as how many cameras and microphones are needed, what time frames, are there multiple livestream locations, etc.) We then prepare a quote tailored to your event.</p>
