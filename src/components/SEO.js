@@ -53,14 +53,14 @@ const SEO = ({title, description, image}) => {
             <script type="application/ld+json">{JSON.stringify({
                 '@context': 'https://schema.org',
                 '@type': 'LocalBusiness',
-                url: 'https://production.d203rjsqyj89or.amplifyapp.com/',
+                url: 'https://www.ourday.ca/',
                 name: 'Our Day',
                 contactPoint: {
                 '@type': 'ContactPoint',
                 telephone: '+1-613-737-3378',
                 contactType: 'Support',
                 },
-                image: '../images/beach-altar.jpg',
+                image: '../images/isi-logo-2.png',
                 telephone: '+1-613-737-3378',
                 address: {
                     '@type': 'PostalAddress',
