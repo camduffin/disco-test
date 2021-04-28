@@ -55,7 +55,7 @@ module.exports = {
         background_color: "#EFF1F2",
         theme_color: "#AF9453",
         display: "fullscreen",
-        icon: "src/images/gold-flower.png",
+        icon: "src/images/isi-small-logo.png",
       },
     },
     "gatsby-plugin-offline",
