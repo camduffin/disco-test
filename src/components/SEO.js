@@ -59,7 +59,7 @@ const SEO = ({title, description, image}) => {
                 "telephone": "+1-613-737-3378",
                 "contactType": "Support",
                 },
-                "image": "src/images/button.png",
+                "image": `${siteUrl}${image}`,
                 "telephone": "+1-613-737-3378",
                 "address": {
                     "@type": "PostalAddress",
