@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { Link } from 'gatsby';
 import '../../styles/navbar.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
-import { GiFlowers } from 'react-icons/gi';
 import button from '../images/button.png';
 
 const NavBar = () => {
@@ -15,7 +14,6 @@ const NavBar = () => {
                 <Link className="main-logo-container" to="/">
                     <div className="our-day-logo">
                         <img src={button} alt=""/>
-                        {/* <GiFlowers/> */}
                     </div>
                     {/* <div className="logo">Our Day</div> */}
                 </Link>

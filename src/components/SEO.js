@@ -11,7 +11,6 @@ const SEO = ({title, description, image}) => {
 
     const {
         defaultTitle,
-        titleTemplate,
         defaultDescription,
         siteUrl,
         defaultImage,
@@ -26,7 +25,7 @@ const SEO = ({title, description, image}) => {
     }
 
     return (
-        <Helmet title={seo.title} titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null}>
+        <Helmet title={seo.title}>
             
             <meta name="description" content={seo.description} />
 
@@ -60,7 +59,7 @@ const SEO = ({title, description, image}) => {
                 "telephone": "+1-613-737-3378",
                 "contactType": "Support",
                 },
-                "image": "../images/isi-logo-2.png",
+                "image": "src/images/button.png",
                 "telephone": "+1-613-737-3378",
                 "address": {
                     "@type": "PostalAddress",
@@ -78,41 +77,13 @@ const SEO = ({title, description, image}) => {
                     "latitude": "45.2874318",
                     "longitude": "-75.8734515"
                 },
-                "sameAs": ["https://www.facebook.com/isilivecanada/", "https://twitter.com/isilive_canada?lang=en", "https://www.instagram.com/isilivecanada/?hl=en", "https://www.linkedin.com/company/isilive/?originalSubdomain=ca"]
+                "sameAs": ["https://www.facebook.com/isilivecanada/", "https://twitter.com/isilive_canada?lang=en", "https://www.instagram.com/isilivecanada/?hl=en", "https://www.linkedin.com/company/isilive/?originalSubdomain=ca"],
+                "hasMap": "https://www.google.com/maps/place/iSiLIVE+%7C+Professional+Webcasting/@45.2874318,-75.8734515,15z/data=!4m2!3m1!1s0x0:0x7909bce2e18e7dd8?sa=X&ved=2ahUKEwiy_quU_aPwAhULP6wKHey8D70Q_BIwFXoECFQQBQ"
             })}
             </script>
 
-            {/* <script type="application/ld+json">{JSON.stringify({
-                '@context': 'https://schema.org',
-                '@type': 'LocalBusiness',
-                url: 'https://www.ourday.ca/',
-                name: 'Our Day',
-                contactPoint: {
-                '@type': 'ContactPoint',
-                telephone: '+1-613-737-3378',
-                contactType: 'Support',
-                },
-                image: '../images/isi-logo-2.png',
-                telephone: '+1-613-737-3378',
-                address: {
-                    '@type': 'PostalAddress',
-                    'streetAddress': '150 C Terence Matthews Crescent',
-                    'addressLocality': 'Ottawa',
-                    'addressRegion': 'ON',
-                    'postalCode': 'K2M1X4',
-                    'addressCountry': 'CA'
-                },
-                priceRange: '$$$',
-                email: 'mailto:info@ourday.ca',
-                description: 'Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!',
-                geo: {
-                    '@type': 'GeoCoordinates',
-                    'latitude': '45.2874318',
-                    'longitude': '-75.8734515'
-                },
-                sameAs: ['https://www.facebook.com/isilivecanada/', 'https://twitter.com/isilive_canada?lang=en', 'https://www.instagram.com/isilivecanada/?hl=en', 'https://www.linkedin.com/company/isilive/?originalSubdomain=ca']
-            })}
-            </script> */}
+            {/* titleTemplate={defaultTitle ? `%s | ${defaultTitle}` : null} */}
+            
         </Helmet>
 
     )
