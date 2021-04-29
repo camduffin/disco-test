@@ -17,6 +17,18 @@ $aquatrans: rgba(213, 222, 226, 0.7);
     }
 }
 
+@mixin burgerMQ {
+    @media (max-width: 810px) {
+    @content;
+    }
+}
+
+@mixin burgerTwoMQ {
+    @media (max-width: 510px) {
+    @content;
+    }
+}
+
 @mixin tabletMQ {
     @media (max-width: 768px) {
     @content;

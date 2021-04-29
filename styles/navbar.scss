@@ -2,14 +2,33 @@
 @import './variables';
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap');
 
-.our-day-logo {
-    color: $gold;
-    font-size: 5rem;
-    position: relative;
-    left: 14px;
+.main-logo-container {
 
-    @include tabletMQ {
-        font-size: 3rem;
+    .our-day-logo {
+        position: relative;
+        width: 90%;
+        padding-left: 40px;
+    
+        img {
+            width: 20%;
+            opacity: .7;
+            transition: all .2s ease-in-out;
+            max-width: 400px;
+    
+            @include bigTabletMQ {
+                width: 20%;
+            }
+        }
+    
+        img:hover,
+        img:focus {
+            transform: scale(1.1);
+            opacity: 1;
+        }
+    
+        @include tabletMQ {
+            font-size: 3rem;
+        }
     }
 }
 
@@ -25,6 +44,20 @@
         left: 10px;
     }
 }
+    
+    // .logo {
+    //     font-size: 22px;
+    //     font-weight: 700;
+    //     text-transform: uppercase;
+    //     color: $offwhite;
+    //     position: relative;
+    //     right: 13px;
+    
+    //     @include tabletMQ {
+    //         font-size: 15px;
+    //     }
+    // }
+
 
 .nav-bar {
     display: flex;
@@ -39,20 +72,9 @@
     top: 0;
     left: 0;
     width: 100%;
+    min-width: 900px;
     background-color: $aquatrans;
     z-index: 1000;
-}
-
-nav .logo {
-    font-size: 22px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $gold;
-    position: relative;
-
-    @include tabletMQ {
-        font-size: 15px;
-    }
 }
 
 nav .logo2 {
@@ -80,9 +102,10 @@ nav .logo2 {
 nav .nav-links {
     display: flex;
     justify-content: space-around;
-    width: 60%;
-    transition: 0.5s ease-in;
-    padding-left: 20px;
+    width: 100%;
+    transition: 0.3s ease-in;
+    // padding-left: 20px;
+    padding-right: 60px;
     z-index: 20000;
 }
 
@@ -112,15 +135,33 @@ nav .burger {
     opacity: 1;
 }
 
-@media all and (max-width: 768px) {
+@media all and (max-width: 1091px) {
 
     nav .burger {
         display: block;
+
+
+        @include burgerMQ {
+            margin-right: 200px;
+        }
+
+        @include tabletMQ {
+            margin-right: 400px;
+        }
+
+        @include burgerTwoMQ {
+            margin-right: 500px;
+        }
+
+        @include phoneMQ {
+            margin-right: 600px;
+        }
+
     }
 
     nav .nav-links {
         position: fixed;
-        display: block;
+        flex-direction: column;
         top: 0;
         left: 0;
         height: 100vh;
@@ -130,9 +171,13 @@ nav .burger {
     }
 
     nav .nav-links li {
-        padding: 50px 25px 25px 15px;
+        padding: 60px 25px 25px 30px;
         border-bottom: 3px solid $gold;
         width: 50%;
+        height: 50%;
+        a {
+            font-size: 3rem;
+        }
     }
 
     nav .nav-links li:last-of-type {
@@ -144,6 +189,15 @@ nav .burger {
 
     nav .nav-links {
         width: 70%;
+    }
+
+    nav .nav-links li {
+
+        width: 100%;
+
+        a {
+            font-size: 2.4rem;
+        }
     }
     
 }

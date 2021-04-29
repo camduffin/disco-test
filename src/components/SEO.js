@@ -51,6 +51,38 @@ const SEO = ({title, description, image}) => {
             {seo.image && <meta name="twitter:image" content={seo.image} />}
 
             <script type="application/ld+json">{JSON.stringify({
+                "@context": "https://schema.org",
+                "@type": "LocalBusiness",
+                "url": "https://www.ourday.ca/",
+                "name": "Our Day",
+                "contactPoint": {
+                "@type": "ContactPoint",
+                "telephone": "+1-613-737-3378",
+                "contactType": "Support",
+                },
+                "image": "../images/isi-logo-2.png",
+                "telephone": "+1-613-737-3378",
+                "address": {
+                    "@type": "PostalAddress",
+                    "streetAddress": "150 C Terence Matthews Crescent",
+                    "addressLocality": "Ottawa",
+                    "addressRegion": "ON",
+                    "postalCode": "K2M1X4",
+                    "addressCountry": "CA"
+                },
+                "priceRange": "$$$",
+                "email": "mailto:info@ourday.ca",
+                "description": "Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!",
+                "geo": {
+                    "@type": "GeoCoordinates",
+                    "latitude": "45.2874318",
+                    "longitude": "-75.8734515"
+                },
+                "sameAs": ["https://www.facebook.com/isilivecanada/", "https://twitter.com/isilive_canada?lang=en", "https://www.instagram.com/isilivecanada/?hl=en", "https://www.linkedin.com/company/isilive/?originalSubdomain=ca"]
+            })}
+            </script>
+
+            {/* <script type="application/ld+json">{JSON.stringify({
                 '@context': 'https://schema.org',
                 '@type': 'LocalBusiness',
                 url: 'https://www.ourday.ca/',
@@ -71,8 +103,16 @@ const SEO = ({title, description, image}) => {
                     'addressCountry': 'CA'
                 },
                 priceRange: '$$$',
+                email: 'mailto:info@ourday.ca',
+                description: 'Event livestreaming and webcasting for all occasions.  We are here to help you turn your day into ourday!',
+                geo: {
+                    '@type': 'GeoCoordinates',
+                    'latitude': '45.2874318',
+                    'longitude': '-75.8734515'
+                },
+                sameAs: ['https://www.facebook.com/isilivecanada/', 'https://twitter.com/isilive_canada?lang=en', 'https://www.instagram.com/isilivecanada/?hl=en', 'https://www.linkedin.com/company/isilive/?originalSubdomain=ca']
             })}
-            </script>
+            </script> */}
         </Helmet>
 
     )

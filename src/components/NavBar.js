@@ -3,6 +3,7 @@ import { Link } from 'gatsby';
 import '../../styles/navbar.scss';
 import { GiHamburgerMenu } from 'react-icons/gi';
 import { GiFlowers } from 'react-icons/gi';
+import button from '../images/button.png';
 
 const NavBar = () => {
 
@@ -11,9 +12,12 @@ const NavBar = () => {
     return (
         <div>
             <nav className="nav-bar">
-                <Link to="/">
-                    <div className="our-day-logo"><GiFlowers/></div>
-                    <div className="logo">Our Day</div>
+                <Link className="main-logo-container" to="/">
+                    <div className="our-day-logo">
+                        <img src={button} alt=""/>
+                        {/* <GiFlowers/> */}
+                    </div>
+                    {/* <div className="logo">Our Day</div> */}
                 </Link>
                 <ul className="nav-links" style={{transform: open ? "translateX(0px)" : ""}}>
                     <li className="nav-link"><Link to="/" className="top-link" activeClassName="nav-link-active">Home</Link></li>
@@ -22,12 +26,12 @@ const NavBar = () => {
                     <li  className="nav-link"><Link to="/pricing" className="top-link"  activeClassName="nav-link-active">Pricing</Link></li>
                     <li className="nav-link"><Link to="/contact" className="top-link"  activeClassName="nav-link-active">Contact</Link></li>
                     <li className="nav-link"><Link to="/blog" className="top-link"  activeClassName="nav-link-active">Blog</Link></li>
-                    <li className="mobile-nav-logo">
+                    {/* <li className="mobile-nav-logo">
                         <Link to="/">
                             <div className="our-day-logo2"><GiFlowers/></div>
                             <div className="logo2">Our Day</div>
                         </Link>
-                    </li>
+                    </li> */}
                 </ul>
                 <GiHamburgerMenu onClick={() => setOpen(!open)} className="burger"/>
             </nav>
