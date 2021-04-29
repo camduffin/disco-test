@@ -9,7 +9,6 @@ module.exports = {
     twitterUsername: "@iSiLIVE_Canada",
   },
   plugins: [
-    "gatsby-plugin-robots-txt",
     "react-icons",
     {
       resolve: "gatsby-plugin-google-fonts",
