@@ -59,7 +59,8 @@ const SEO = ({title, description, image}) => {
                 "telephone": "+1-613-737-3378",
                 "contactType": "Support",
                 },
-                "image": `${siteUrl}${image}`,
+                "image": "/beach-altar.jpg",
+                "logo": "/button.png",
                 "telephone": "+1-613-737-3378",
                 "address": {
                     "@type": "PostalAddress",
