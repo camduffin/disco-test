@@ -4,7 +4,7 @@ import { Helmet } from "react-helmet";
 import { useLocation } from "@reach/router";
 import { useStaticQuery, graphql } from "gatsby";
 
-const SEO = ({title, description, image}) => {
+const SEO = ({title, description, image, lang}) => {
 
     const { pathname } = useLocation();
     const { site } = useStaticQuery(query);
@@ -22,12 +22,15 @@ const SEO = ({title, description, image}) => {
         description: description || defaultDescription,
         image: `${siteUrl}${image || defaultImage}`,
         url: `${siteUrl}${pathname}`,
+        canonical: `${siteUrl}${pathname}`
     }
 
     return (
-        <Helmet title={seo.title}>
+        <Helmet title={seo.title} htmlAttributes={{ lang }}>
             
             <meta name="description" content={seo.description} />
+
+            <link rel="canonical" href={seo.canonical}/>
 
             <meta name="keywords" content="wedding, big event, celebration, recognition, achievement, graduation, birthday, anniversary, appreciation, party, vows, livestream, webcast, broadcast, milestone, event, speech, live address, formal, wedding webcast, wedding livestream, venue, wedding venue, livestream venue, webcast venue, videographers, party webcast"/>
 
