@@ -28,7 +28,7 @@ const PricingPage = () => {
     
                         <div className="pricing-text-container" data-sal="fade" data-sal-duration="3000">
                             <p>Your event is special. We pride ourselves on creating innovative solutions. As such, iSiLIVE offers specific quotes for your specific event. 
-                            There is typically a 3 hour minimum charge to cover things such as travel time, site visit, testing, set up and tear down. That is a minimum $1,500.00.</p>
+                            There is typically a 3 hour minimum charge to cover things such as travel time, site visit, testing, set up and tear down. That is a minimum $1,500.00 + tax.</p>
 
                             <div className="pricing-button" data-sal="fade" data-sal-duration="3000">
                                 <Link to="/contact">Contact us about pricing</Link>
